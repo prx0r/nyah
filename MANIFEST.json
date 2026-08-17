@@ -83,33 +83,9 @@
       "owner": "nyah"
     },
     {
-      "id": "discovery",
-      "path": "pipeline/discovery.py",
-      "role": "source-discovery",
-      "owner": "nyah"
-    },
-    {
       "id": "worker_pool",
       "path": "pipeline/worker_pool.py",
       "role": "worker-registry",
-      "owner": "nyah"
-    },
-    {
-      "id": "objective",
-      "path": "pipeline/objective.py",
-      "role": "objective-function",
-      "owner": "nyah"
-    },
-    {
-      "id": "run_recorder",
-      "path": "pipeline/run_recorder.py",
-      "role": "content-addressed-runs",
-      "owner": "nyah"
-    },
-    {
-      "id": "schemas",
-      "path": "pipeline/schemas.py",
-      "role": "data-contracts",
       "owner": "nyah"
     },
     {
@@ -158,6 +134,54 @@
       "id": "NRAH-SKILL",
       "path": "skills/nrah/SKILL.md",
       "role": "hermes-skill",
+      "owner": "nyah"
+    },
+    {
+      "id": "api_client",
+      "path": "pipeline/api_client.py",
+      "role": "mimo-api",
+      "owner": "nyah"
+    },
+    {
+      "id": "event_log",
+      "path": "pipeline/event_log.py",
+      "role": "event-log",
+      "owner": "nyah"
+    },
+    {
+      "id": "schema_registry",
+      "path": "pipeline/schema_registry.py",
+      "role": "schema-registry",
+      "owner": "nyah"
+    },
+    {
+      "id": "provenance",
+      "path": "pipeline/provenance.py",
+      "role": "nanopub",
+      "owner": "nyah"
+    },
+    {
+      "id": "digest",
+      "path": "pipeline/digest.py",
+      "role": "content-addressing",
+      "owner": "nyah"
+    },
+    {
+      "id": "entity_id",
+      "path": "pipeline/entity_id.py",
+      "role": "entity-ids",
+      "owner": "nyah"
+    },
+    {
+      "id": "agent_executor",
+      "path": "pipeline/agent_executor.py",
+      "role": "task-executor",
+      "owner": "nyah"
+    },
+    {
+      "id": "openpatala_executor",
+      "path": "pipeline/openpatala_executor.py",
+      "role": "openpatala-steps",
       "owner": "nyah"
     }
   ]
