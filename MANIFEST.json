@@ -125,12 +125,6 @@
       "owner": "nyah"
     },
     {
-      "id": "HERMES",
-      "path": "docs/HERMES.md",
-      "role": "hermes-integration",
-      "owner": "nyah"
-    },
-    {
       "id": "NRAH-SKILL",
       "path": "skills/nrah/SKILL.md",
       "role": "hermes-skill",
@@ -248,6 +242,36 @@
       "id": "mcp_server",
       "path": "pipeline/mcp_server.py",
       "role": "mcp-tools",
+      "owner": "nyah"
+    },
+    {
+      "id": "comparative-audit",
+      "path": "data/comparative-audit.md",
+      "role": "system-audit",
+      "owner": "nyah"
+    },
+    {
+      "id": "newbuild-checkpoints",
+      "path": "data/newbuild_checkpoints.json",
+      "role": "checkpoint-tracker",
+      "owner": "nyah"
+    },
+    {
+      "id": "newbuild-items",
+      "path": "data/newbuild_numbered_items.json",
+      "role": "item-validation",
+      "owner": "nyah"
+    },
+    {
+      "id": "vision-patala1",
+      "path": "data/vision-patala1.jsonl",
+      "role": "phase-1-vision",
+      "owner": "nyah"
+    },
+    {
+      "id": "product-wire",
+      "path": "pipeline/product_wire.py",
+      "role": "product-adapter",
       "owner": "nyah"
     }
   ]
