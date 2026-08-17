@@ -14,35 +14,40 @@
       "source": "newbuildmainspec",
       "name": "schema foundation",
       "description": "Implement SourceProvider, SourceEndpoint, RightsPolicy, Artifact, RawObservation, EntityCandidate, CandidateAssertion, Assertion, ExternalIdentifier, IdentityAssertion + migrations",
-      "status": "partial"
+      "status": "partial",
+      "note": "22 v2 schema definitions exist but no code implements them"
     },
     {
       "id": "OP2",
       "source": "newbuildmainspec",
       "name": "migrate sources",
       "description": "Convert source-register.jsonl into provider/endpoint rows",
-      "status": "not_started"
+      "status": "not_started",
+      "note": "source-register.jsonl still primary"
     },
     {
       "id": "OP3",
       "source": "newbuildmainspec",
       "name": "observation ingestion",
       "description": "Refactor Archive adapter to write RawObservation/Artifact",
-      "status": "partial"
+      "status": "not_started",
+      "note": "gretil adapter standalone, no RawObservation/Artifact"
     },
     {
       "id": "OP4",
       "source": "newbuildmainspec",
       "name": "assertion extraction",
       "description": "Refactor normalize.py: slug\u2192CandidateAssertion, metadata\u2192CandidateAssertion",
-      "status": "not_started"
+      "status": "not_started",
+      "note": "normalize.py not refactored for CandidateAssertion"
     },
     {
       "id": "OP5",
       "source": "newbuildmainspec",
       "name": "resolver v2",
       "description": "Migrate resolver logic, implement ResolutionProposal, no fuzzy auto-merge",
-      "status": "done"
+      "status": "partial",
+      "note": "resolver in nyah, not wired in openpatala"
     },
     {
       "id": "OP6",
@@ -70,21 +75,24 @@
       "source": "newbuildmainspec",
       "name": "API v1",
       "description": "Implement all core endpoints + /bundle, /resolve, /frontier, /changes",
-      "status": "partial"
+      "status": "partial",
+      "note": "API serves 254 works from JSON (legacy backend)"
     },
     {
       "id": "OP10",
       "source": "newbuildmainspec",
       "name": "adapter SDK",
       "description": "Build generic adapter contract",
-      "status": "partial"
+      "status": "partial",
+      "note": "adapters/_template exists, no generic contract"
     },
     {
       "id": "OP11",
       "source": "newbuildmainspec",
       "name": "high-value imports",
       "description": "PANDiT, GRETIL, FoJin, Darshana, OpenAlex",
-      "status": "not_started"
+      "status": "partial",
+      "note": "only gretil adapter, not PANDiT/FoJin/Darshana/OpenAlex"
     },
     {
       "id": "OP12",
@@ -175,7 +183,8 @@
       "source": "newbuildmainspec",
       "name": "permanent DB small",
       "description": "entity_identity, event, artifact, schema_definition, ledger_checkpoint",
-      "status": "done"
+      "status": "partial",
+      "note": "22 v2 schemas defined, code uses JSON files"
     },
     {
       "id": "S7",
@@ -329,7 +338,8 @@
       "source": "newbuildmainspec",
       "name": "snapshot manifests",
       "description": "Parquet exports with manifest + digests",
-      "status": "not_started"
+      "status": "partial",
+      "note": "snapshot-manifest schema exists, no Parquet export"
     },
     {
       "id": "S29",
@@ -420,7 +430,8 @@
       "source": "newbuildplayers",
       "name": "P\u0101\u1e6dala 0.5 \u2014 reference substrate",
       "description": "Make Sanskrit addressable. Agent gets canonical work + alternatives + editions + texts + translations + provenance.",
-      "status": "partial"
+      "status": "partial",
+      "note": "254 works, API serves, not fully addressable"
     },
     {
       "id": "P1",
