@@ -129,6 +129,42 @@
       "digest": "sha256:7d67f2da31c37dd282fc4dbb9f98ba87093837f0a6616a69899e9f700633fea6",
       "published_at": "2026-08-17T07:23:43.454359+00:00",
       "immutable": true
+    },
+    "nyah/test_mig/1.0.0": {
+      "uri": "nyah/test_mig/1.0.0",
+      "family": "test_mig",
+      "version": "1.0.0",
+      "schema": {
+        "type": "object"
+      },
+      "digest": "sha256:ff419ebbeba438f66900abe77818ce940702bdfe70fa173cb94beecee8d3f112",
+      "published_at": "2026-08-17T07:35:50.479212+00:00",
+      "immutable": true
+    },
+    "nyah/test_mig/2.0.0": {
+      "uri": "nyah/test_mig/2.0.0",
+      "family": "test_mig",
+      "version": "2.0.0",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "string"
+          }
+        }
+      },
+      "digest": "sha256:7d67f2da31c37dd282fc4dbb9f98ba87093837f0a6616a69899e9f700633fea6",
+      "published_at": "2026-08-17T07:35:50.479598+00:00",
+      "immutable": true
+    },
+    "nyah/f/1.0.0": {
+      "uri": "nyah/f/1.0.0",
+      "family": "f",
+      "version": "1.0.0",
+      "schema": {},
+      "digest": "sha256:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "published_at": "2026-08-17T07:40:57.042614+00:00",
+      "immutable": true
     }
   }
 }

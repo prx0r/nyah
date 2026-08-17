@@ -30,8 +30,8 @@ ROOT = Path(__file__).resolve().parent.parent
 FAILURE_LOG = ROOT / "data" / "runs" / "failures.jsonl"
 
 # Failure classification
-TRANSIENT_ERRORS = ["timeout", "rate_limit", "rate limit", "connection", "temporary", "busy", "oom"]
-PERMANENT_ERRORS = ["auth", "permission", "not_found", "corrupt", "schema", "invalid"]
+TRANSIENT_ERRORS = ["timeout", "rate limit", "connection", "temporary", "busy", "oom", "refused"]
+PERMANENT_ERRORS = ["authentication", "permission", "not found", "corrupt", "schema", "invalid", "denied"]
 MAX_RETRIES = 3
 
 # Retry strategy: which worker types can substitute

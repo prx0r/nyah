@@ -1,0 +1,14 @@
+{
+  "id": "np_RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus_1c432c20",
+  "assertion": "RESOLVE_RIGHTS for Aghoraśiva's doctrinal commentarial corpus (Aṣṭaprakaraṇa): RESTRICTED",
+  "assertion_hash": "sha256:1c432c2048c8af06b5f09e61a2cb20e5705ef847dd8f0f85c7f3a9b6581b6476",
+  "evidence": "mimo-v2.5 response (531 tokens)",
+  "evidence_hash": "sha256:abc70e59b685d27d36f11e1593f7a3fadcf2fcc984d91241013f8acac706e7fb",
+  "provenance": {
+    "model": "mimo-v2.5",
+    "duration_s": 15.8,
+    "tokens": 531,
+    "schema": "nyah/result/1.0.0"
+  },
+  "created_at": "2026-08-17T07:41:37.689548+00:00"
+}

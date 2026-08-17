@@ -30,7 +30,7 @@ BOARD_FILE = ROOT / "data" / "kanban.json"
 # Valid states and transitions
 STATES = ["BACKLOG", "READY", "DISPATCHED", "IN_PROGRESS", "DONE", "FAILED", "ESCALATED"]
 TRANSITIONS = {
-    "BACKLOG": ["READY"],
+    "BACKLOG": ["READY", "ESCALATED"],
     "READY": ["DISPATCHED", "IN_PROGRESS", "DONE", "FAILED"],
     "DISPATCHED": ["IN_PROGRESS"],
     "IN_PROGRESS": ["DONE", "FAILED"],
@@ -135,13 +135,19 @@ class KanbanBoard:
         return self.move(task_id, "ESCALATED", reason)
 
     def retry(self, task_id: str, max_retries: int = 3) -> bool:
-        """Retry a failed task (move back to BACKLOG if under retry limit)."""
+        """Retry a failed task. Moves to BACKLOG (from FAILED) or READY (from BACKLOG)."""
         task = self.tasks.get(task_id)
         if not task:
             return False
-        if task.get("retry_count", 0) >= max_retries:
+        retries = task.get("retry_count", 0)
+        if retries >= max_retries:
             return self.escalate(task_id, f"max retries ({max_retries}) exceeded")
-        return self.move(task_id, "BACKLOG", f"retry #{task.get('retry_count', 0) + 1}")
+        state = task["state"]
+        if state == "FAILED":
+            return self.move(task_id, "BACKLOG", f"retry #{retries + 1}")
+        elif state == "BACKLOG" and retries > 0:
+            return self.move(task_id, "READY", f"retry #{retries}")
+        return False
 
     def ready_tasks(self, task_type: str | None = None) -> list[dict]:
         """Get tasks in READY state, optionally filtered by type."""

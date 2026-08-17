@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T07:24:03.050336+00:00",
+  "updated": "2026-08-17T07:40:57.149969+00:00",
   "agents": [
     {
       "agent_id": "agent_test_worker_001",
@@ -10,6 +10,48 @@
       "current_task_type": null,
       "spawned_at": "2026-08-17T07:24:03.050065+00:00",
       "last_heartbeat": "2026-08-17T07:24:03.050065+00:00",
+      "tasks_completed": 1,
+      "tasks_failed": 0,
+      "total_runtime_s": 0.0,
+      "error": null
+    },
+    {
+      "agent_id": "agent_resolver_001",
+      "agent_type": "resolver",
+      "pid": null,
+      "state": "WORKING",
+      "current_task_id": "t1",
+      "current_task_type": "RESOLVE_RIGHTS",
+      "spawned_at": "2026-08-17T07:35:50.398180+00:00",
+      "last_heartbeat": "2026-08-17T07:35:50.398180+00:00",
+      "tasks_completed": 0,
+      "tasks_failed": 0,
+      "total_runtime_s": 0.0,
+      "error": null
+    },
+    {
+      "agent_id": "agent_test_kill_001",
+      "agent_type": "test_kill",
+      "pid": null,
+      "state": "FAILED",
+      "current_task_id": "task_kill",
+      "current_task_type": "TEST",
+      "spawned_at": "2026-08-17T07:36:12.988718+00:00",
+      "last_heartbeat": "2026-08-17T07:36:12.988718+00:00",
+      "tasks_completed": 0,
+      "tasks_failed": 0,
+      "total_runtime_s": 0.0,
+      "error": "test failure"
+    },
+    {
+      "agent_id": "agent_w_001",
+      "agent_type": "w",
+      "pid": null,
+      "state": "IDLE",
+      "current_task_id": null,
+      "current_task_type": null,
+      "spawned_at": "2026-08-17T07:40:57.149707+00:00",
+      "last_heartbeat": "2026-08-17T07:40:57.149707+00:00",
       "tasks_completed": 1,
       "tasks_failed": 0,
       "total_runtime_s": 0.0,
