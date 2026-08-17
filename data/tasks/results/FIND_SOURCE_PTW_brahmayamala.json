@@ -1,0 +1,12 @@
+{
+  "task_id": "FIND_SOURCE_PTW_brahmayamala",
+  "task_type": "FIND_SOURCE",
+  "work_id": "PTW_brahmayamala",
+  "work_title": "Brahmayamala",
+  "status": "DONE",
+  "parsed": null,
+  "raw": "I will check the specified repositories for a machine-readable source of the **Brahmayamala**. \n\nHere is the result of my search:\n\n**GRETIL (Göttingen Register of Electronic Texts in Indian Languages):**  \nNo entry found for \"Brahmayamala\" or variants like \"Brahmayāmala.\"\n\n**Archive.org:**  \nScanned book images of the *Brahmayāmala* exist (e.g., editions by K.K.L. Chowdhary), but **no machine-readable (OCR/transcribed) text** is currently available there.\n\n**PANDiT (Project for Annotated North-I",
+  "duration_s": 10.3,
+  "tokens": 689,
+  "timestamp": "2026-08-17T06:22:01.392000+00:00"
+}

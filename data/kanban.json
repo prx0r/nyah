@@ -1,0 +1,100 @@
+{
+  "updated": "2026-08-17T05:58:33.583618+00:00",
+  "tasks": {
+    "real_RIGHTS_PTW_mrgendragama": {
+      "task_id": "real_RIGHTS_PTW_mrgendragama",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "PTW_mrgendragama",
+      "work_title": "Mrgendragama",
+      "state": "READY",
+      "priority": 0.8,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T05:58:33.582064+00:00",
+      "updated_at": "2026-08-17T05:58:33.582281+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T05:58:33.582064+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T05:58:33.582281+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "real_RIGHTS_PTW_kiranatantra": {
+      "task_id": "real_RIGHTS_PTW_kiranatantra",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "PTW_kiranatantra",
+      "work_title": "Kiranatantra",
+      "state": "READY",
+      "priority": 0.8,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T05:58:33.582444+00:00",
+      "updated_at": "2026-08-17T05:58:33.583144+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T05:58:33.582444+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T05:58:33.583144+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "real_RIGHTS_PTW_ajitagama": {
+      "task_id": "real_RIGHTS_PTW_ajitagama",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "PTW_ajitagama",
+      "work_title": "Ajitagama",
+      "state": "READY",
+      "priority": 0.8,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T05:58:33.583355+00:00",
+      "updated_at": "2026-08-17T05:58:33.583590+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T05:58:33.583355+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T05:58:33.583590+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    }
+  },
+  "history": [
+    {
+      "task_id": "real_RIGHTS_PTW_mrgendragama",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T05:58:33.582281+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "real_RIGHTS_PTW_kiranatantra",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T05:58:33.583144+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "real_RIGHTS_PTW_ajitagama",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T05:58:33.583590+00:00",
+      "reason": ""
+    }
+  ]
+}

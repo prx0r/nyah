@@ -1,0 +1,12 @@
+{
+  "task_id": "RESOLVE_RIGHTS_PTW_sarvajnanottara",
+  "task_type": "RESOLVE_RIGHTS",
+  "work_id": "PTW_sarvajnanottara",
+  "work_title": "Sarvajnanottara",
+  "status": "DONE",
+  "parsed": null,
+  "raw": "OPEN",
+  "duration_s": 8.6,
+  "tokens": 426,
+  "timestamp": "2026-08-17T06:21:51.069319+00:00"
+}

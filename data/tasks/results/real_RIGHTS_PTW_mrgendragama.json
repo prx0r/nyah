@@ -1,0 +1,12 @@
+{
+  "task_id": "real_RIGHTS_PTW_mrgendragama",
+  "task_type": "RESOLVE_RIGHTS",
+  "work_id": "PTW_mrgendragama",
+  "work_title": "Mrgendragama",
+  "status": "TIMEOUT",
+  "output": "__TIMEOUT__",
+  "parsed": null,
+  "duration_s": 60.0,
+  "exit_code": -1,
+  "timestamp": "2026-08-17T05:59:33.618413+00:00"
+}

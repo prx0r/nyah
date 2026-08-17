@@ -1,0 +1,9 @@
+{"name": "nrah-init", "effect": "nyah project scaffolded with all pipeline modules", "gate": "python3 check.py --status", "after": [], "value": 0.9, "cost": 0.2}
+{"name": "gap-analysis-ready", "effect": "gap analyzer can read OpenPatala state and emit priorities", "gate": "python3 pipeline/gap_analyzer.py --demo", "after": ["nrah-init"], "value": 0.8, "cost": 0.3}
+{"name": "task-generation-ready", "effect": "task generator produces deterministic TaskCandidates from state", "gate": "python3 pipeline/task_generator.py --demo", "after": ["nrah-init"], "value": 0.8, "cost": 0.3}
+{"name": "scheduler-ready", "effect": "scheduler dispatches tasks to workers by objective priority", "gate": "python3 pipeline/scheduler.py --demo", "after": ["task-generation-ready", "gap-analysis-ready"], "value": 0.7, "cost": 0.3}
+{"name": "discovery-modes-ready", "effect": "all 5 discovery modes emit candidates", "gate": "python3 pipeline/discovery.py --demo", "after": ["nrah-init"], "value": 0.7, "cost": 0.4}
+{"name": "worker-pool-ready", "effect": "worker pool assigns tasks to correct worker types", "gate": "python3 pipeline/worker_pool.py --demo", "after": ["nrah-init"], "value": 0.6, "cost": 0.2}
+{"name": "orchestrator-running", "effect": "agent/run.py reports project status", "gate": "python3 agent/run.py --step report", "after": ["gap-analysis-ready", "task-generation-ready"], "value": 0.8, "cost": 0.3}
+{"name": "openpatala-state-integration", "effect": "nyah reads live OpenPatala completeness state", "gate": "test -f data/openpatala_state.json", "after": ["orchestrator-running"], "value": 0.9, "cost": 0.6}
+{"name": "first-autonomous-cycle", "effect": "nyah runs a full scan→gap→task→dispatch cycle autonomously", "gate": "python3 agent/run.py --step scan && python3 agent/run.py --step gaps && python3 agent/run.py --step dispatch", "after": ["openpatala-state-integration"], "value": 0.9, "cost": 0.5}

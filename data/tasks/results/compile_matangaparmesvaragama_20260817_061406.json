@@ -1,0 +1,10 @@
+{
+  "step": "compile",
+  "work": "matangaparmesvaragama",
+  "status": "DONE",
+  "exit_code": 0,
+  "stdout": "  skip matangaparmesvaragama: no curated metadata in WORKS map\n\n\u2192 built 1 works (0 live), index now 260 works in 0.0s\n\n",
+  "stderr": "",
+  "duration_s": 0.2,
+  "timestamp": "2026-08-17T06:14:06.751061+00:00"
+}
