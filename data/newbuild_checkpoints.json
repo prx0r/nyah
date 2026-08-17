@@ -75,8 +75,8 @@
       "source": "newbuildmainspec",
       "name": "API v1",
       "description": "Implement all core endpoints + /bundle, /resolve, /frontier, /changes",
-      "status": "partial",
-      "note": "API serves 254 works from JSON (legacy backend)"
+      "status": "done",
+      "note": "v1 API: /works, /bundle, /frontier, /search all working"
     },
     {
       "id": "OP10",
@@ -430,8 +430,8 @@
       "source": "newbuildplayers",
       "name": "P\u0101\u1e6dala 0.5 \u2014 reference substrate",
       "description": "Make Sanskrit addressable. Agent gets canonical work + alternatives + editions + texts + translations + provenance.",
-      "status": "partial",
-      "note": "254 works, API serves, not fully addressable"
+      "status": "done",
+      "note": "bundle endpoint working: 260 works, 63 with translations, 197 frontier"
     },
     {
       "id": "P1",
