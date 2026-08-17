@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "policies": {
+    "gretil": {
+      "robots_behavior": "respect",
+      "max_requests_per_second": 2,
+      "max_concurrency": 1,
+      "metadata_only": false,
+      "content_fetch_allowed": true,
+      "contact_email": null,
+      "notes": "Academic resource, be gentle"
+    },
+    "archive.org": {
+      "robots_behavior": "respect",
+      "max_requests_per_second": 1,
+      "max_concurrency": 1,
+      "metadata_only": false,
+      "content_fetch_allowed": true,
+      "contact_email": null,
+      "notes": "Rate limited, 1 req/sec recommended"
+    },
+    "muktabodha": {
+      "robots_behavior": "respect",
+      "max_requests_per_second": 1,
+      "max_concurrency": 1,
+      "metadata_only": true,
+      "content_fetch_allowed": false,
+      "contact_email": null,
+      "notes": "Login required for content, metadata only without auth"
+    },
+    "pandit": {
+      "robots_behavior": "respect",
+      "max_requests_per_second": 1,
+      "max_concurrency": 1,
+      "metadata_only": true,
+      "content_fetch_allowed": false,
+      "contact_email": null,
+      "notes": "Metadata only, no bulk download"
+    },
+    "openalex": {
+      "robots_behavior": "respect",
+      "max_requests_per_second": 10,
+      "max_concurrency": 3,
+      "metadata_only": false,
+      "content_fetch_allowed": true,
+      "contact_email": null,
+      "notes": "Polite pool: 10 req/sec with email in header"
+    }
+  }
+}

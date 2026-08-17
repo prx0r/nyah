@@ -1,0 +1,135 @@
+{
+  "version": "1.0.0",
+  "relations": {
+    "AUTHORED_BY": {
+      "version": "1.0.0",
+      "domain": [
+        "WORK"
+      ],
+      "range": [
+        "PERSON"
+      ],
+      "inverse": "AUTHOR_OF",
+      "transitive": false,
+      "deprecated": false,
+      "semantics": "Work W was authored by Person P"
+    },
+    "EDITION_OF": {
+      "version": "1.0.0",
+      "domain": [
+        "EDITION"
+      ],
+      "range": [
+        "WORK"
+      ],
+      "inverse": "HAS_EDITION",
+      "transitive": false,
+      "deprecated": false,
+      "semantics": "Edition E is an edition of Work W"
+    },
+    "WITNESS_OF": {
+      "version": "1.0.0",
+      "domain": [
+        "WITNESS"
+      ],
+      "range": [
+        "WORK"
+      ],
+      "inverse": "HAS_WITNESS",
+      "transitive": false,
+      "deprecated": false,
+      "semantics": "Witness M is a manuscript witness of Work W"
+    },
+    "TRANSLATION_OF": {
+      "version": "1.0.0",
+      "domain": [
+        "TRANSLATION"
+      ],
+      "range": [
+        "WORK"
+      ],
+      "inverse": "HAS_TRANSLATION",
+      "transitive": false,
+      "deprecated": false,
+      "semantics": "Translation T is a translation of Work W"
+    },
+    "SAME_WORK": {
+      "version": "1.0.0",
+      "domain": [
+        "WORK"
+      ],
+      "range": [
+        "WORK"
+      ],
+      "inverse": "SAME_WORK",
+      "transitive": true,
+      "deprecated": false,
+      "semantics": "Two records refer to the same intellectual work"
+    },
+    "SUPPORTS": {
+      "version": "1.0.0",
+      "domain": [
+        "ASSERTION"
+      ],
+      "range": [
+        "ASSERTION"
+      ],
+      "inverse": "SUPPORTED_BY",
+      "transitive": false,
+      "deprecated": false,
+      "semantics": "Assertion A provides evidence for Assertion B"
+    },
+    "CONTRADICTS": {
+      "version": "1.0.0",
+      "domain": [
+        "ASSERTION"
+      ],
+      "range": [
+        "ASSERTION"
+      ],
+      "inverse": "CONTRADICTED_BY",
+      "transitive": false,
+      "deprecated": false,
+      "semantics": "Assertion A contradicts Assertion B"
+    },
+    "DEPENDS_ON": {
+      "version": "1.0.0",
+      "domain": [
+        "ENTITY"
+      ],
+      "range": [
+        "ENTITY"
+      ],
+      "inverse": null,
+      "transitive": true,
+      "deprecated": false,
+      "semantics": "If X changes, Y must be reconsidered"
+    },
+    "DERIVED_FROM": {
+      "version": "1.0.0",
+      "domain": [
+        "ENTITY"
+      ],
+      "range": [
+        "ENTITY"
+      ],
+      "inverse": "HAS_DERIVATIVE",
+      "transitive": false,
+      "deprecated": false,
+      "semantics": "Entity B was produced from Entity A"
+    },
+    "PART_OF": {
+      "version": "1.0.0",
+      "domain": [
+        "PASSAGE"
+      ],
+      "range": [
+        "WORK"
+      ],
+      "inverse": "HAS_PART",
+      "transitive": false,
+      "deprecated": false,
+      "semantics": "Passage P is part of Work W"
+    }
+  }
+}

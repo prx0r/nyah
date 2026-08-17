@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "lineage": [
+    {
+      "source_a": "gretil",
+      "source_b": "muktabodha",
+      "relationship": "INDEPENDENT"
+    },
+    {
+      "source_a": "gretil",
+      "source_b": "archive.org",
+      "relationship": "INDEPENDENT"
+    },
+    {
+      "source_a": "pandit",
+      "source_b": "muktabodha",
+      "relationship": "INDEPENDENT"
+    },
+    {
+      "source_a": "pandit",
+      "source_b": "archive.org",
+      "relationship": "INDEPENDENT"
+    },
+    {
+      "source_a": "archive.org",
+      "source_b": "muktabodha",
+      "relationship": "INDEPENDENT"
+    },
+    {
+      "source_a": "openalex",
+      "source_b": "crossref",
+      "relationship": "DERIVED_FROM"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "policies": {
+    "gretil": {
+      "provider": "gretil",
+      "license_uri": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "copyright_status": "CC-BY-NC-SA",
+      "discovery": "ALLOWED",
+      "metadata_fetch": "ALLOWED",
+      "content_fetch": "ALLOWED",
+      "compute": "ALLOWED",
+      "derivative_generation": "ALLOWED",
+      "redistribution": "BLOCKED",
+      "training": "BLOCKED"
+    },
+    "archive.org": {
+      "provider": "archive.org",
+      "license_uri": null,
+      "copyright_status": "VARIABLE",
+      "discovery": "ALLOWED",
+      "metadata_fetch": "ALLOWED",
+      "content_fetch": "UNKNOWN",
+      "compute": "UNKNOWN",
+      "derivative_generation": "UNKNOWN",
+      "redistribution": "BLOCKED",
+      "training": "UNKNOWN"
+    },
+    "muktabodha": {
+      "provider": "muktabodha",
+      "license_uri": null,
+      "copyright_status": "IN_COPYRIGHT",
+      "discovery": "ALLOWED",
+      "metadata_fetch": "ALLOWED",
+      "content_fetch": "BLOCKED",
+      "compute": "BLOCKED",
+      "derivative_generation": "BLOCKED",
+      "redistribution": "BLOCKED",
+      "training": "BLOCKED"
+    },
+    "pandit": {
+      "provider": "pandit",
+      "license_uri": null,
+      "copyright_status": "IN_COPYRIGHT",
+      "discovery": "ALLOWED",
+      "metadata_fetch": "ALLOWED",
+      "content_fetch": "UNKNOWN",
+      "compute": "UNKNOWN",
+      "derivative_generation": "UNKNOWN",
+      "redistribution": "BLOCKED",
+      "training": "BLOCKED"
+    },
+    "openalex": {
+      "provider": "openalex",
+      "license_uri": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "copyright_status": "CC0",
+      "discovery": "ALLOWED",
+      "metadata_fetch": "ALLOWED",
+      "content_fetch": "ALLOWED",
+      "compute": "ALLOWED",
+      "derivative_generation": "ALLOWED",
+      "redistribution": "ALLOWED",
+      "training": "ALLOWED"
+    }
+  }
+}
