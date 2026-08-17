@@ -1,0 +1,566 @@
+{
+  "version": "1.0.0",
+  "extracted": "2026-08-17T08:13:57Z",
+  "checkpoints": [
+    {
+      "id": "OP0",
+      "source": "newbuildmainspec",
+      "name": "security",
+      "description": "Rotate/remove committed credentials, env/secrets only",
+      "status": "done"
+    },
+    {
+      "id": "OP1",
+      "source": "newbuildmainspec",
+      "name": "schema foundation",
+      "description": "Implement SourceProvider, SourceEndpoint, RightsPolicy, Artifact, RawObservation, EntityCandidate, CandidateAssertion, Assertion, ExternalIdentifier, IdentityAssertion + migrations",
+      "status": "partial"
+    },
+    {
+      "id": "OP2",
+      "source": "newbuildmainspec",
+      "name": "migrate sources",
+      "description": "Convert source-register.jsonl into provider/endpoint rows",
+      "status": "not_started"
+    },
+    {
+      "id": "OP3",
+      "source": "newbuildmainspec",
+      "name": "observation ingestion",
+      "description": "Refactor Archive adapter to write RawObservation/Artifact",
+      "status": "partial"
+    },
+    {
+      "id": "OP4",
+      "source": "newbuildmainspec",
+      "name": "assertion extraction",
+      "description": "Refactor normalize.py: slug\u2192CandidateAssertion, metadata\u2192CandidateAssertion",
+      "status": "not_started"
+    },
+    {
+      "id": "OP5",
+      "source": "newbuildmainspec",
+      "name": "resolver v2",
+      "description": "Migrate resolver logic, implement ResolutionProposal, no fuzzy auto-merge",
+      "status": "done"
+    },
+    {
+      "id": "OP6",
+      "source": "newbuildmainspec",
+      "name": "textual entities",
+      "description": "Add Edition, Witness, Surrogate, EText, DocumentSegment, LogicalPassage, TextOccurrence, TextSpan",
+      "status": "not_started"
+    },
+    {
+      "id": "OP7",
+      "source": "newbuildmainspec",
+      "name": "translation entities",
+      "description": "Add Translation + TranslationAvailability projection",
+      "status": "not_started"
+    },
+    {
+      "id": "OP8",
+      "source": "newbuildmainspec",
+      "name": "completeness",
+      "description": "Build WorkCompleteness materialized projection",
+      "status": "done"
+    },
+    {
+      "id": "OP9",
+      "source": "newbuildmainspec",
+      "name": "API v1",
+      "description": "Implement all core endpoints + /bundle, /resolve, /frontier, /changes",
+      "status": "partial"
+    },
+    {
+      "id": "OP10",
+      "source": "newbuildmainspec",
+      "name": "adapter SDK",
+      "description": "Build generic adapter contract",
+      "status": "partial"
+    },
+    {
+      "id": "OP11",
+      "source": "newbuildmainspec",
+      "name": "high-value imports",
+      "description": "PANDiT, GRETIL, FoJin, Darshana, OpenAlex",
+      "status": "not_started"
+    },
+    {
+      "id": "OP12",
+      "source": "newbuildmainspec",
+      "name": "autonomous gaps",
+      "description": "Generate Tasks from completeness state",
+      "status": "done"
+    },
+    {
+      "id": "OP13",
+      "source": "newbuildmainspec",
+      "name": "NRAH integration",
+      "description": "Let NRAH schedule discovery/resolution/fetch/normalize tasks",
+      "status": "done"
+    },
+    {
+      "id": "OP14",
+      "source": "newbuildmainspec",
+      "name": "Factory seam",
+      "description": "source-ready + no-translation \u2192 TranslationJobProposal",
+      "status": "not_started"
+    },
+    {
+      "id": "OP15",
+      "source": "newbuildmainspec",
+      "name": "evolving ingestion",
+      "description": "Use A-Evolve/ADIAS-style SystemIssues on resolver/adapters",
+      "status": "not_started"
+    },
+    {
+      "id": "TEST-1",
+      "source": "newbuildmainspec",
+      "name": "first autonomy test",
+      "description": "Find and correctly represent 100 Sanskrit works absent from OpenPatala without manually naming them",
+      "status": "partial"
+    },
+    {
+      "id": "TEST-2",
+      "source": "newbuildmainspec",
+      "name": "second autonomy test",
+      "description": "Find 25 source-ready Sanskrit works with no known English translation",
+      "status": "partial"
+    },
+    {
+      "id": "TEST-3",
+      "source": "newbuildmainspec",
+      "name": "third autonomy test",
+      "description": "Detect one error in existing catalog from independent source evidence and repair without destroying old state",
+      "status": "not_started"
+    },
+    {
+      "id": "S1",
+      "source": "newbuildmainspec",
+      "name": "architectural law",
+      "description": "IDENTITY \u2260 CONTENT \u2260 INTERPRETATION \u2260 REPRESENTATION",
+      "status": "done"
+    },
+    {
+      "id": "S2",
+      "source": "newbuildmainspec",
+      "name": "opaque IDs",
+      "description": "Use UUIDv7, never encode content in ID",
+      "status": "done"
+    },
+    {
+      "id": "S3",
+      "source": "newbuildmainspec",
+      "name": "DigestSet",
+      "description": "Every thing with bytes gets algorithm-tagged digests",
+      "status": "done"
+    },
+    {
+      "id": "S4",
+      "source": "newbuildmainspec",
+      "name": "three hashes",
+      "description": "Raw-byte, canonical structured, semantic fingerprint",
+      "status": "done"
+    },
+    {
+      "id": "S5",
+      "source": "newbuildmainspec",
+      "name": "unicode trap",
+      "description": "Do not secretly NFC-normalize before hashing",
+      "status": "done"
+    },
+    {
+      "id": "S6",
+      "source": "newbuildmainspec",
+      "name": "permanent DB small",
+      "description": "entity_identity, event, artifact, schema_definition, ledger_checkpoint",
+      "status": "done"
+    },
+    {
+      "id": "S7",
+      "source": "newbuildmainspec",
+      "name": "entity_identity",
+      "description": "UUIDv7 + entity_class + created_event_id + lifecycle",
+      "status": "done"
+    },
+    {
+      "id": "S8",
+      "source": "newbuildmainspec",
+      "name": "event is durable",
+      "description": "Event { event_id, event_type, entity_ids[], schema_uri, payload, payload_digest }",
+      "status": "done"
+    },
+    {
+      "id": "S9",
+      "source": "newbuildmainspec",
+      "name": "never mutate events",
+      "description": "Append new events, never UPDATE",
+      "status": "done"
+    },
+    {
+      "id": "S10",
+      "source": "newbuildmainspec",
+      "name": "schema immutability",
+      "description": "Published schemas frozen, new version = new schema",
+      "status": "done"
+    },
+    {
+      "id": "S11",
+      "source": "newbuildmainspec",
+      "name": "append-only schema registry",
+      "description": "Every schema URI versioned, immutable",
+      "status": "done"
+    },
+    {
+      "id": "S12",
+      "source": "newbuildmainspec",
+      "name": "relation vocabulary",
+      "description": "Versioned typed edges with domain/range",
+      "status": "done"
+    },
+    {
+      "id": "S13",
+      "source": "newbuildmainspec",
+      "name": "identity vs derivation graph",
+      "description": "Separate IDENTITY GRAPH, DERIVATION GRAPH, EPISTEMIC GRAPH, DEPENDENCY GRAPH",
+      "status": "done"
+    },
+    {
+      "id": "S14",
+      "source": "newbuildmainspec",
+      "name": "rights first-class",
+      "description": "RightsPolicy before fetch, never silently broaden",
+      "status": "done"
+    },
+    {
+      "id": "S15",
+      "source": "newbuildmainspec",
+      "name": "three time fields",
+      "description": "occurred_at, observed_at, recorded_at",
+      "status": "partial"
+    },
+    {
+      "id": "S16",
+      "source": "newbuildmainspec",
+      "name": "bitemporal assertions",
+      "description": "valid_from, valid_until",
+      "status": "not_started"
+    },
+    {
+      "id": "S17",
+      "source": "newbuildmainspec",
+      "name": "source lineage",
+      "description": "INDEPENDENT vs COPIED_FROM vs MIRROR_OF",
+      "status": "not_started"
+    },
+    {
+      "id": "S18",
+      "source": "newbuildmainspec",
+      "name": "discovery scoring",
+      "description": "SourceUtility { novelty_yield, works_per_request, source_quality, ... }",
+      "status": "done"
+    },
+    {
+      "id": "S19",
+      "source": "newbuildmainspec",
+      "name": "crawl policy",
+      "description": "robots, rate limits, paths per provider",
+      "status": "done"
+    },
+    {
+      "id": "S20",
+      "source": "newbuildmainspec",
+      "name": "five discovery modes",
+      "description": "A=adapter sweeps, B=protocol, C=graph expansion, D=gap-driven, E=frontier",
+      "status": "done"
+    },
+    {
+      "id": "S21",
+      "source": "newbuildmainspec",
+      "name": "source onboarding",
+      "description": "DISCOVER\u2192POLICY_CHECK\u2192CAPABILITY_PROBE\u2192SAMPLE\u2192NORMALIZE\u2192ADOPT",
+      "status": "not_started"
+    },
+    {
+      "id": "S22",
+      "source": "newbuildmainspec",
+      "name": "resolver R0-R5",
+      "description": "R0=exact ID, R1=crosswalk, R2=bibliographic, R3=fuzzy, R4=multi-source, R5=human",
+      "status": "done"
+    },
+    {
+      "id": "S23",
+      "source": "newbuildmainspec",
+      "name": "text fingerprinting",
+      "description": "MinHash, shingles, passage overlap for dedup",
+      "status": "not_started"
+    },
+    {
+      "id": "S24",
+      "source": "newbuildmainspec",
+      "name": "bundle endpoint",
+      "description": "GET /v1/bundle/{id} returns full dossier",
+      "status": "partial"
+    },
+    {
+      "id": "S25",
+      "source": "newbuildmainspec",
+      "name": "resolve endpoint",
+      "description": "GET /v1/resolve?q=... returns EXACT/PROBABLE/AMBIGUOUS/NONE",
+      "status": "done"
+    },
+    {
+      "id": "S26",
+      "source": "newbuildmainspec",
+      "name": "frontier API",
+      "description": "GET /v1/frontier/translations \u2014 works needing translations",
+      "status": "done"
+    },
+    {
+      "id": "S27",
+      "source": "newbuildmainspec",
+      "name": "changes feed",
+      "description": "GET /v1/changes?since=<cursor>",
+      "status": "done"
+    },
+    {
+      "id": "S28",
+      "source": "newbuildmainspec",
+      "name": "snapshot manifests",
+      "description": "Parquet exports with manifest + digests",
+      "status": "not_started"
+    },
+    {
+      "id": "S29",
+      "source": "newbuildmainspec",
+      "name": "Merkle checkpoints",
+      "description": "Batch events into Merkle tree, sign, publish",
+      "status": "done"
+    },
+    {
+      "id": "S30",
+      "source": "newbuildmainspec",
+      "name": "PROV-O export",
+      "description": "Every derivation maps to prov:Activity/prov:Entity/prov:Agent",
+      "status": "not_started"
+    },
+    {
+      "id": "GTM-1",
+      "source": "newbuildideas",
+      "name": "Aug-Oct 2026: become useful",
+      "description": "Ship OpenPatala publicly. Primary: find any Sanskrit work, discover what exists.",
+      "status": "partial"
+    },
+    {
+      "id": "GTM-2",
+      "source": "newbuildideas",
+      "name": "Nov 2026-Jan 2027: demonstrate refinery",
+      "description": "Run public 100 untranslated works campaign. Publish production statistics.",
+      "status": "not_started"
+    },
+    {
+      "id": "GTM-3",
+      "source": "newbuildideas",
+      "name": "Feb-Apr 2027: acquire humans",
+      "description": "Give scholars private profile/claim pages. Specific outreach for micro-reviews.",
+      "status": "not_started"
+    },
+    {
+      "id": "GTM-4",
+      "source": "newbuildideas",
+      "name": "May-Jul 2027: sell first serious things",
+      "description": "Revenue: commercial translation/audit, benchmark data, private workspaces, API.",
+      "status": "not_started"
+    },
+    {
+      "id": "END-1",
+      "source": "newbuildideas",
+      "name": "hard reference layer",
+      "description": "The hard reference layer for historical knowledge",
+      "status": "partial"
+    },
+    {
+      "id": "END-2",
+      "source": "newbuildideas",
+      "name": "operating system for philosophy",
+      "description": "Philosopher\u2192work\u2192passage\u2192proposition\u2192argument\u2192objection\u2192reply\u2192school",
+      "status": "not_started"
+    },
+    {
+      "id": "END-3",
+      "source": "newbuildideas",
+      "name": "Scholar OS",
+      "description": "Scholarship continuously compiled, not paper-shaped",
+      "status": "not_started"
+    },
+    {
+      "id": "END-4",
+      "source": "newbuildideas",
+      "name": "education compiler",
+      "description": "Lessons from argument-derived interactions, proof-carrying education",
+      "status": "not_started"
+    },
+    {
+      "id": "END-5",
+      "source": "newbuildideas",
+      "name": "reality market",
+      "description": "Agents exhaust reasoning, produce RealityRequest, humans compensated",
+      "status": "not_started"
+    },
+    {
+      "id": "END-6",
+      "source": "newbuildideas",
+      "name": "active science OS",
+      "description": "Question\u2192hypotheses\u2192inference\u2192predictions\u2192experiment\u2192observation\u2192belief update",
+      "status": "not_started"
+    },
+    {
+      "id": "P0.5",
+      "source": "newbuildplayers",
+      "name": "P\u0101\u1e6dala 0.5 \u2014 reference substrate",
+      "description": "Make Sanskrit addressable. Agent gets canonical work + alternatives + editions + texts + translations + provenance.",
+      "status": "partial"
+    },
+    {
+      "id": "P1",
+      "source": "newbuildplayers",
+      "name": "P\u0101\u1e6dala 1 \u2014 verified translation network",
+      "description": "Translation Factory + Eval + Bench for AI labs.",
+      "status": "not_started"
+    },
+    {
+      "id": "P1.5",
+      "source": "newbuildplayers",
+      "name": "P\u0101\u1e6dala 1.5 \u2014 live scholarship",
+      "description": "One real scholar answers one high-information question, correction propagates.",
+      "status": "not_started"
+    },
+    {
+      "id": "P2",
+      "source": "newbuildplayers",
+      "name": "P\u0101\u1e6dala 2 \u2014 demand engine",
+      "description": "Library + Ask P\u0101\u1e6dala + Tutor + Open Questions.",
+      "status": "not_started"
+    },
+    {
+      "id": "P2.5",
+      "source": "newbuildplayers",
+      "name": "P\u0101\u1e6dala 2.5 \u2014 reality market",
+      "description": "Micro-bounties for scarce observations.",
+      "status": "not_started"
+    },
+    {
+      "id": "P3",
+      "source": "newbuildplayers",
+      "name": "P\u0101\u1e6dala 3 \u2014 active epistemic OS",
+      "description": "The full system: Sanskrit was the proving ground.",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-1",
+      "source": "newbuildplayers",
+      "name": "IIIF adapter",
+      "description": "Manuscript images via IIIF Presentation + Mirador",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-2",
+      "source": "newbuildplayers",
+      "name": "TEI adapter",
+      "description": "Textual apparatus interchange via TEI",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-3",
+      "source": "newbuildplayers",
+      "name": "DTS adapter",
+      "description": "Passage addressing via Distributed Text Services",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-4",
+      "source": "newbuildplayers",
+      "name": "OpenAlex integration",
+      "description": "Scholarly works, citations, authors",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-5",
+      "source": "newbuildplayers",
+      "name": "ORCID integration",
+      "description": "Researcher identity",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-6",
+      "source": "newbuildplayers",
+      "name": "ROR integration",
+      "description": "Institution identity",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-7",
+      "source": "newbuildplayers",
+      "name": "Crossref adapter",
+      "description": "DOI metadata",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-8",
+      "source": "newbuildplayers",
+      "name": "MCP server",
+      "description": "Agent interface via Model Context Protocol",
+      "status": "done"
+    },
+    {
+      "id": "INT-9",
+      "source": "newbuildplayers",
+      "name": "PROV-O serializer",
+      "description": "Provenance export",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-10",
+      "source": "newbuildplayers",
+      "name": "RO-Crate packaging",
+      "description": "Research object packaging",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-11",
+      "source": "newbuildplayers",
+      "name": "DataCite/Zenodo DOI",
+      "description": "Dataset citation",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-12",
+      "source": "newbuildplayers",
+      "name": "HuggingFace distribution",
+      "description": "Model-facing dataset releases",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-13",
+      "source": "newbuildplayers",
+      "name": "Web Annotation serializer",
+      "description": "Span/image/time targeting",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-14",
+      "source": "newbuildplayers",
+      "name": "CIDOC CRM mapping",
+      "description": "Cultural heritage interoperability",
+      "status": "not_started"
+    },
+    {
+      "id": "INT-15",
+      "source": "newbuildplayers",
+      "name": "C2PA media provenance",
+      "description": "Content-generation history",
+      "status": "not_started"
+    }
+  ]
+}
