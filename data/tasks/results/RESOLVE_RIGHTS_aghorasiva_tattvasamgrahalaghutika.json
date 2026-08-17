@@ -5,15 +5,15 @@
   "work_title": "Aghoraśiva's Tattvasaṃgrahalaghuṭīkā",
   "status": "DONE",
   "parsed": null,
-  "raw": "Open",
-  "duration_s": 22.7,
-  "tokens": 429,
-  "timestamp": "2026-08-17T06:40:14.735656+00:00",
+  "raw": "OPEN",
+  "duration_s": 8.6,
+  "tokens": 443,
+  "timestamp": "2026-08-17T06:51:13.676688+00:00",
   "_digest": {
     "algorithm": "sha256",
-    "value": "9663b3841d54035b236d297ff6c5559b1bb0fe562ca83d303cd33c8a65ddc9d3",
+    "value": "b0524442e371a32be2279bb26f4f1bc3258c9650bbf3d173296e23b2fa453682",
     "encoding": "hex",
     "canonicalization": "jcs"
   },
-  "_nanopub": "np_RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika_b47d622b"
+  "_nanopub": "np_RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika_73c7adf0"
 }

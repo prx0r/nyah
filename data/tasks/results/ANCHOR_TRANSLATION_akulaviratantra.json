@@ -3,17 +3,17 @@
   "task_type": "ANCHOR_TRANSLATION",
   "work_id": "akulaviratantra",
   "work_title": "Akulavīratantra (A/B)",
-  "status": "DONE",
+  "status": "FAILED",
   "parsed": null,
-  "raw": "I understand you're asking about the textual alignment between the **Akulavīratantra** (specifically the A and B recensions) and their corresponding source passages, likely in a scholarly edition or translation. This is a very specific and technical question in Tibetan Buddhist textual studies.\n\nHere’s a breakdown of what such an alignment typically entails and the challenges involved, so you can assess the information you already have or clarify what you need:\n\n### Typical Passages Covered in a",
-  "duration_s": 13.5,
-  "tokens": 671,
-  "timestamp": "2026-08-17T06:39:39.953170+00:00",
+  "raw": "",
+  "duration_s": 30.0,
+  "tokens": 0,
+  "timestamp": "2026-08-17T06:50:34.916164+00:00",
   "_digest": {
     "algorithm": "sha256",
-    "value": "38067dedbc20a2d975275e04c47ff1c020152aac1721a1b24ec434ad237d6191",
+    "value": "bbb5624896a3b545ec7acc9cb562c654131fe9a2562126d240f073930938da64",
     "encoding": "hex",
     "canonicalization": "jcs"
   },
-  "_nanopub": "np_ANCHOR_TRANSLATION_akulaviratantra_e9b39bae"
+  "_nanopub": "np_ANCHOR_TRANSLATION_akulaviratantra_f6bbe417"
 }

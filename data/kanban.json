@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T06:40:14.736579+00:00",
+  "updated": "2026-08-17T06:51:13.677453+00:00",
   "tasks": {
     "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus": {
       "task_id": "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus",
@@ -10,16 +10,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:38:58.161192+00:00",
-      "updated_at": "2026-08-17T06:38:58.161463+00:00",
+      "created_at": "2026-08-17T06:49:45.811487+00:00",
+      "updated_at": "2026-08-17T06:49:45.811707+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:38:58.161192+00:00"
+          "at": "2026-08-17T06:49:45.811487+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:38:58.161463+00:00",
+          "at": "2026-08-17T06:49:45.811707+00:00",
           "reason": ""
         }
       ],
@@ -34,26 +34,26 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:38:58.161666+00:00",
-      "updated_at": "2026-08-17T06:39:17.131644+00:00",
+      "created_at": "2026-08-17T06:49:45.811869+00:00",
+      "updated_at": "2026-08-17T06:49:54.114406+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:38:58.161666+00:00"
+          "at": "2026-08-17T06:49:45.811869+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:38:58.162413+00:00",
+          "at": "2026-08-17T06:49:45.812526+00:00",
           "reason": ""
         },
         {
           "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:38:58.165479+00:00",
+          "at": "2026-08-17T06:49:45.815711+00:00",
           "reason": ""
         },
         {
           "state": "DONE",
-          "at": "2026-08-17T06:39:17.131644+00:00",
+          "at": "2026-08-17T06:49:54.114406+00:00",
           "reason": "mimo-v2.5: OPEN"
         }
       ],
@@ -68,16 +68,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:38:58.162811+00:00",
-      "updated_at": "2026-08-17T06:38:58.163326+00:00",
+      "created_at": "2026-08-17T06:49:45.812790+00:00",
+      "updated_at": "2026-08-17T06:49:45.813122+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:38:58.162811+00:00"
+          "at": "2026-08-17T06:49:45.812790+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:38:58.163326+00:00",
+          "at": "2026-08-17T06:49:45.813122+00:00",
           "reason": ""
         }
       ],
@@ -92,26 +92,26 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:38:58.163714+00:00",
-      "updated_at": "2026-08-17T06:39:26.371479+00:00",
+      "created_at": "2026-08-17T06:49:45.813409+00:00",
+      "updated_at": "2026-08-17T06:50:04.802673+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:38:58.163714+00:00"
+          "at": "2026-08-17T06:49:45.813409+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:38:58.164241+00:00",
+          "at": "2026-08-17T06:49:45.813642+00:00",
           "reason": ""
         },
         {
           "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:39:17.240770+00:00",
+          "at": "2026-08-17T06:49:54.210743+00:00",
           "reason": ""
         },
         {
           "state": "DONE",
-          "at": "2026-08-17T06:39:26.371479+00:00",
+          "at": "2026-08-17T06:50:04.802673+00:00",
           "reason": "mimo-v2.5: OPEN"
         }
       ],
@@ -126,16 +126,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:38:58.164639+00:00",
-      "updated_at": "2026-08-17T06:38:58.165007+00:00",
+      "created_at": "2026-08-17T06:49:45.813931+00:00",
+      "updated_at": "2026-08-17T06:49:45.814236+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:38:58.164639+00:00"
+          "at": "2026-08-17T06:49:45.813931+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:38:58.165007+00:00",
+          "at": "2026-08-17T06:49:45.814236+00:00",
           "reason": ""
         }
       ],
@@ -150,27 +150,27 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:17.234810+00:00",
-      "updated_at": "2026-08-17T06:40:14.736542+00:00",
+      "created_at": "2026-08-17T06:49:54.205918+00:00",
+      "updated_at": "2026-08-17T06:51:13.677425+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:17.234810+00:00"
+          "at": "2026-08-17T06:49:54.205918+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:17.235464+00:00",
+          "at": "2026-08-17T06:49:54.206426+00:00",
           "reason": ""
         },
         {
           "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:39:52.001307+00:00",
+          "at": "2026-08-17T06:51:05.125059+00:00",
           "reason": ""
         },
         {
           "state": "DONE",
-          "at": "2026-08-17T06:40:14.736542+00:00",
-          "reason": "mimo-v2.5: Open"
+          "at": "2026-08-17T06:51:13.677425+00:00",
+          "reason": "mimo-v2.5: OPEN"
         }
       ],
       "retry_count": 0
@@ -184,16 +184,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:17.236708+00:00",
-      "updated_at": "2026-08-17T06:39:17.237162+00:00",
+      "created_at": "2026-08-17T06:49:54.207096+00:00",
+      "updated_at": "2026-08-17T06:49:54.207758+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:17.236708+00:00"
+          "at": "2026-08-17T06:49:54.207096+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:17.237162+00:00",
+          "at": "2026-08-17T06:49:54.207758+00:00",
           "reason": ""
         }
       ],
@@ -208,16 +208,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:17.237844+00:00",
-      "updated_at": "2026-08-17T06:39:17.238283+00:00",
+      "created_at": "2026-08-17T06:49:54.208170+00:00",
+      "updated_at": "2026-08-17T06:49:54.208540+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:17.237844+00:00"
+          "at": "2026-08-17T06:49:54.208170+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:17.238283+00:00",
+          "at": "2026-08-17T06:49:54.208540+00:00",
           "reason": ""
         }
       ],
@@ -232,16 +232,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:17.238696+00:00",
-      "updated_at": "2026-08-17T06:39:17.239211+00:00",
+      "created_at": "2026-08-17T06:49:54.208927+00:00",
+      "updated_at": "2026-08-17T06:49:54.209344+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:17.238696+00:00"
+          "at": "2026-08-17T06:49:54.208927+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:17.239211+00:00",
+          "at": "2026-08-17T06:49:54.209344+00:00",
           "reason": ""
         }
       ],
@@ -256,16 +256,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:17.239648+00:00",
-      "updated_at": "2026-08-17T06:39:17.240291+00:00",
+      "created_at": "2026-08-17T06:49:54.209880+00:00",
+      "updated_at": "2026-08-17T06:49:54.210325+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:17.239648+00:00"
+          "at": "2026-08-17T06:49:54.209880+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:17.240291+00:00",
+          "at": "2026-08-17T06:49:54.210325+00:00",
           "reason": ""
         }
       ],
@@ -280,16 +280,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:26.441727+00:00",
-      "updated_at": "2026-08-17T06:39:26.442412+00:00",
+      "created_at": "2026-08-17T06:50:04.895230+00:00",
+      "updated_at": "2026-08-17T06:50:04.895794+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:26.441727+00:00"
+          "at": "2026-08-17T06:50:04.895230+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:26.442412+00:00",
+          "at": "2026-08-17T06:50:04.895794+00:00",
           "reason": ""
         }
       ],
@@ -304,16 +304,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:26.444737+00:00",
-      "updated_at": "2026-08-17T06:39:26.447263+00:00",
+      "created_at": "2026-08-17T06:50:04.897111+00:00",
+      "updated_at": "2026-08-17T06:50:04.897682+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:26.444737+00:00"
+          "at": "2026-08-17T06:50:04.897111+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:26.447263+00:00",
+          "at": "2026-08-17T06:50:04.897682+00:00",
           "reason": ""
         }
       ],
@@ -324,68 +324,78 @@
       "task_type": "TRANSLATE",
       "work_id": "akulaviratantra",
       "work_title": "Akulavīratantra (A/B)",
-      "state": "DONE",
+      "state": "BACKLOG",
       "priority": 0.2688,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:26.448383+00:00",
-      "updated_at": "2026-08-17T06:39:51.888295+00:00",
+      "created_at": "2026-08-17T06:50:04.898261+00:00",
+      "updated_at": "2026-08-17T06:51:05.044354+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:26.448383+00:00"
+          "at": "2026-08-17T06:50:04.898261+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:26.448947+00:00",
+          "at": "2026-08-17T06:50:04.898758+00:00",
           "reason": ""
         },
         {
           "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:39:40.059061+00:00",
+          "at": "2026-08-17T06:50:35.020680+00:00",
           "reason": ""
         },
         {
-          "state": "DONE",
-          "at": "2026-08-17T06:39:51.888295+00:00",
-          "reason": "mimo-v2.5: I would be pleased to assist with a translation from the **Akulavīratantra**, but I would need a spe"
+          "state": "FAILED",
+          "at": "2026-08-17T06:51:05.041734+00:00",
+          "reason": "Expecting value: line 1 column 1 (char 0)"
+        },
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:51:05.044354+00:00",
+          "reason": "retry #1"
         }
       ],
-      "retry_count": 0
+      "retry_count": 1
     },
     "ANCHOR_TRANSLATION_akulaviratantra": {
       "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
       "task_type": "ANCHOR_TRANSLATION",
       "work_id": "akulaviratantra",
       "work_title": "Akulavīratantra (A/B)",
-      "state": "DONE",
+      "state": "BACKLOG",
       "priority": 0.336,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:26.449357+00:00",
-      "updated_at": "2026-08-17T06:39:39.954220+00:00",
+      "created_at": "2026-08-17T06:50:04.899412+00:00",
+      "updated_at": "2026-08-17T06:50:34.918534+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:26.449357+00:00"
+          "at": "2026-08-17T06:50:04.899412+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:26.449611+00:00",
+          "at": "2026-08-17T06:50:04.899776+00:00",
           "reason": ""
         },
         {
           "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:39:26.450623+00:00",
+          "at": "2026-08-17T06:50:04.901262+00:00",
           "reason": ""
         },
         {
-          "state": "DONE",
-          "at": "2026-08-17T06:39:39.954220+00:00",
-          "reason": "mimo-v2.5: I understand you're asking about the textual alignment between the **Akulavīratantra** (specifically"
+          "state": "FAILED",
+          "at": "2026-08-17T06:50:34.917118+00:00",
+          "reason": "Expecting value: line 1 column 1 (char 0)"
+        },
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:50:34.918534+00:00",
+          "reason": "retry #1"
         }
       ],
-      "retry_count": 0
+      "retry_count": 1
     },
     "RESOLVE_RIGHTS_akulaviratantra": {
       "task_id": "RESOLVE_RIGHTS_akulaviratantra",
@@ -396,16 +406,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:26.450073+00:00",
-      "updated_at": "2026-08-17T06:39:26.450355+00:00",
+      "created_at": "2026-08-17T06:50:04.900200+00:00",
+      "updated_at": "2026-08-17T06:50:04.900532+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:26.450073+00:00"
+          "at": "2026-08-17T06:50:04.900200+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:26.450355+00:00",
+          "at": "2026-08-17T06:50:04.900532+00:00",
           "reason": ""
         }
       ],
@@ -420,16 +430,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:40.051716+00:00",
-      "updated_at": "2026-08-17T06:39:40.052372+00:00",
+      "created_at": "2026-08-17T06:50:35.012649+00:00",
+      "updated_at": "2026-08-17T06:50:35.013385+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:40.051716+00:00"
+          "at": "2026-08-17T06:50:35.012649+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:40.052372+00:00",
+          "at": "2026-08-17T06:50:35.013385+00:00",
           "reason": ""
         }
       ],
@@ -444,16 +454,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:40.053194+00:00",
-      "updated_at": "2026-08-17T06:39:40.053978+00:00",
+      "created_at": "2026-08-17T06:50:35.014531+00:00",
+      "updated_at": "2026-08-17T06:50:35.015408+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:40.053194+00:00"
+          "at": "2026-08-17T06:50:35.014531+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:40.053978+00:00",
+          "at": "2026-08-17T06:50:35.015408+00:00",
           "reason": ""
         }
       ],
@@ -468,16 +478,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:40.054716+00:00",
-      "updated_at": "2026-08-17T06:39:40.055401+00:00",
+      "created_at": "2026-08-17T06:50:35.016151+00:00",
+      "updated_at": "2026-08-17T06:50:35.016735+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:40.054716+00:00"
+          "at": "2026-08-17T06:50:35.016151+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:40.055401+00:00",
+          "at": "2026-08-17T06:50:35.016735+00:00",
           "reason": ""
         }
       ],
@@ -492,16 +502,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:40.056111+00:00",
-      "updated_at": "2026-08-17T06:39:40.056745+00:00",
+      "created_at": "2026-08-17T06:50:35.017433+00:00",
+      "updated_at": "2026-08-17T06:50:35.018266+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:40.056111+00:00"
+          "at": "2026-08-17T06:50:35.017433+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:40.056745+00:00",
+          "at": "2026-08-17T06:50:35.018266+00:00",
           "reason": ""
         }
       ],
@@ -516,16 +526,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:40.057457+00:00",
-      "updated_at": "2026-08-17T06:39:40.058270+00:00",
+      "created_at": "2026-08-17T06:50:35.019083+00:00",
+      "updated_at": "2026-08-17T06:50:35.019884+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:40.057457+00:00"
+          "at": "2026-08-17T06:50:35.019083+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:40.058270+00:00",
+          "at": "2026-08-17T06:50:35.019884+00:00",
           "reason": ""
         }
       ],
@@ -540,16 +550,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:51.993337+00:00",
-      "updated_at": "2026-08-17T06:39:51.994316+00:00",
+      "created_at": "2026-08-17T06:51:05.119920+00:00",
+      "updated_at": "2026-08-17T06:51:05.120404+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:51.993337+00:00"
+          "at": "2026-08-17T06:51:05.119920+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:51.994316+00:00",
+          "at": "2026-08-17T06:51:05.120404+00:00",
           "reason": ""
         }
       ],
@@ -564,16 +574,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:51.995554+00:00",
-      "updated_at": "2026-08-17T06:39:51.996258+00:00",
+      "created_at": "2026-08-17T06:51:05.121058+00:00",
+      "updated_at": "2026-08-17T06:51:05.121435+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:51.995554+00:00"
+          "at": "2026-08-17T06:51:05.121058+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:51.996258+00:00",
+          "at": "2026-08-17T06:51:05.121435+00:00",
           "reason": ""
         }
       ],
@@ -588,16 +598,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:51.997003+00:00",
-      "updated_at": "2026-08-17T06:39:51.997734+00:00",
+      "created_at": "2026-08-17T06:51:05.122313+00:00",
+      "updated_at": "2026-08-17T06:51:05.122717+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:51.997003+00:00"
+          "at": "2026-08-17T06:51:05.122313+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:51.997734+00:00",
+          "at": "2026-08-17T06:51:05.122717+00:00",
           "reason": ""
         }
       ],
@@ -612,16 +622,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:51.998298+00:00",
-      "updated_at": "2026-08-17T06:39:51.999008+00:00",
+      "created_at": "2026-08-17T06:51:05.123095+00:00",
+      "updated_at": "2026-08-17T06:51:05.123675+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:51.998298+00:00"
+          "at": "2026-08-17T06:51:05.123095+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:51.999008+00:00",
+          "at": "2026-08-17T06:51:05.123675+00:00",
           "reason": ""
         }
       ],
@@ -636,16 +646,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:39:51.999738+00:00",
-      "updated_at": "2026-08-17T06:39:52.000501+00:00",
+      "created_at": "2026-08-17T06:51:05.124052+00:00",
+      "updated_at": "2026-08-17T06:51:05.124649+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:39:51.999738+00:00"
+          "at": "2026-08-17T06:51:05.124052+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:39:52.000501+00:00",
+          "at": "2026-08-17T06:51:05.124649+00:00",
           "reason": ""
         }
       ],
@@ -657,246 +667,260 @@
       "task_id": "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:38:58.161463+00:00",
+      "at": "2026-08-17T06:49:45.811707+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:38:58.162413+00:00",
+      "at": "2026-08-17T06:49:45.812526+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_aghorasiva_tattvaprakasika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:38:58.163326+00:00",
+      "at": "2026-08-17T06:49:45.813122+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:38:58.164241+00:00",
+      "at": "2026-08-17T06:49:45.813642+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_aghorasiva_tattvasamgrahalaghutika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:38:58.165007+00:00",
+      "at": "2026-08-17T06:49:45.814236+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
       "from": "READY",
       "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:38:58.165479+00:00",
+      "at": "2026-08-17T06:49:45.815711+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
       "from": "IN_PROGRESS",
       "to": "DONE",
-      "at": "2026-08-17T06:39:17.131644+00:00",
+      "at": "2026-08-17T06:49:54.114406+00:00",
       "reason": "mimo-v2.5: OPEN"
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:17.235464+00:00",
+      "at": "2026-08-17T06:49:54.206426+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_aghorasivas_ullekhini_on_ratnatraya",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:17.237162+00:00",
+      "at": "2026-08-17T06:49:54.207758+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasivas_ullekhini_on_ratnatraya",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:17.238283+00:00",
+      "at": "2026-08-17T06:49:54.208540+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_aitareyaaranyaka",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:17.239211+00:00",
+      "at": "2026-08-17T06:49:54.209344+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aitareyaaranyaka",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:17.240291+00:00",
+      "at": "2026-08-17T06:49:54.210325+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
       "from": "READY",
       "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:39:17.240770+00:00",
+      "at": "2026-08-17T06:49:54.210743+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
       "from": "IN_PROGRESS",
       "to": "DONE",
-      "at": "2026-08-17T06:39:26.371479+00:00",
+      "at": "2026-08-17T06:50:04.802673+00:00",
       "reason": "mimo-v2.5: OPEN"
     },
     {
       "task_id": "FIND_ETEXT_ajitagama",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:26.442412+00:00",
+      "at": "2026-08-17T06:50:04.895794+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_ajitagama",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:26.447263+00:00",
+      "at": "2026-08-17T06:50:04.897682+00:00",
       "reason": ""
     },
     {
       "task_id": "TRANSLATE_akulaviratantra",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:26.448947+00:00",
+      "at": "2026-08-17T06:50:04.898758+00:00",
       "reason": ""
     },
     {
       "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:26.449611+00:00",
+      "at": "2026-08-17T06:50:04.899776+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_akulaviratantra",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:26.450355+00:00",
+      "at": "2026-08-17T06:50:04.900532+00:00",
       "reason": ""
     },
     {
       "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
       "from": "READY",
       "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:39:26.450623+00:00",
+      "at": "2026-08-17T06:50:04.901262+00:00",
       "reason": ""
     },
     {
       "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
       "from": "IN_PROGRESS",
-      "to": "DONE",
-      "at": "2026-08-17T06:39:39.954220+00:00",
-      "reason": "mimo-v2.5: I understand you're asking about the textual alignment between the **Akulavīratantra** (specifically"
+      "to": "FAILED",
+      "at": "2026-08-17T06:50:34.917118+00:00",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
+      "from": "FAILED",
+      "to": "BACKLOG",
+      "at": "2026-08-17T06:50:34.918534+00:00",
+      "reason": "retry #1"
     },
     {
       "task_id": "FIND_ETEXT_anonymous_ratnatrayapariksavyakhya",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:40.052372+00:00",
+      "at": "2026-08-17T06:50:35.013385+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_anonymous_ratnatrayapariksavyakhya",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:40.053978+00:00",
+      "at": "2026-08-17T06:50:35.015408+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_atharvasiraupanisad",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:40.055401+00:00",
+      "at": "2026-08-17T06:50:35.016735+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_atharvasiraupanisad",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:40.056745+00:00",
+      "at": "2026-08-17T06:50:35.018266+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_atharvavedapaippalada",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:40.058270+00:00",
+      "at": "2026-08-17T06:50:35.019884+00:00",
       "reason": ""
     },
     {
       "task_id": "TRANSLATE_akulaviratantra",
       "from": "READY",
       "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:39:40.059061+00:00",
+      "at": "2026-08-17T06:50:35.020680+00:00",
       "reason": ""
     },
     {
       "task_id": "TRANSLATE_akulaviratantra",
       "from": "IN_PROGRESS",
-      "to": "DONE",
-      "at": "2026-08-17T06:39:51.888295+00:00",
-      "reason": "mimo-v2.5: I would be pleased to assist with a translation from the **Akulavīratantra**, but I would need a spe"
+      "to": "FAILED",
+      "at": "2026-08-17T06:51:05.041734+00:00",
+      "reason": "Expecting value: line 1 column 1 (char 0)"
+    },
+    {
+      "task_id": "TRANSLATE_akulaviratantra",
+      "from": "FAILED",
+      "to": "BACKLOG",
+      "at": "2026-08-17T06:51:05.044354+00:00",
+      "reason": "retry #1"
     },
     {
       "task_id": "RESOLVE_RIGHTS_atharvavedapaippalada",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:51.994316+00:00",
+      "at": "2026-08-17T06:51:05.120404+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_atharvavedasaunaka",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:51.996258+00:00",
+      "at": "2026-08-17T06:51:05.121435+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_atharvavedasaunaka",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:51.997734+00:00",
+      "at": "2026-08-17T06:51:05.122717+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_bhagavadgita_sarvatobhadra",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:51.999008+00:00",
+      "at": "2026-08-17T06:51:05.123675+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_bhagavadgita_sarvatobhadra",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:39:52.000501+00:00",
+      "at": "2026-08-17T06:51:05.124649+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
       "from": "READY",
       "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:39:52.001307+00:00",
+      "at": "2026-08-17T06:51:05.125059+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
       "from": "IN_PROGRESS",
       "to": "DONE",
-      "at": "2026-08-17T06:40:14.736542+00:00",
-      "reason": "mimo-v2.5: Open"
+      "at": "2026-08-17T06:51:13.677425+00:00",
+      "reason": "mimo-v2.5: OPEN"
     }
   ]
 }

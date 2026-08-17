@@ -2,15 +2,15 @@
 """pipeline/pipeline_runner.py — the autonomous coordination loop.
 
 Reads OpenPatala API → finds gaps → generates tasks → dispatches → executes via mimo-v2.5 → updates kanban.
+Failed tasks are retried via failure_handler (up to 2 retries).
 
 Usage:
   python3 pipeline/pipeline_runner.py --cycle
-  python3 pipeline/pipeline_runner.py --autonomous --max-cycles 3
+  python3 pipeline/pipeline_runner.py --autonomous --max-cycles 5
 """
 from __future__ import annotations
 
 import json
-import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -22,6 +22,7 @@ from openpatala_bridge import convert_all
 from gap_analyzer import analyze_work
 from kanban_board import KanbanBoard
 from agent_executor import execute_task, RESULTS_DIR
+from failure_handler import handle_failure
 
 CYCLE_LOG = ROOT / "data" / "runs" / "pipeline-cycles.jsonl"
 CYCLE_LOG.parent.mkdir(parents=True, exist_ok=True)
@@ -50,10 +51,40 @@ def get_tasks_for_execution(board: KanbanBoard, works: list[dict],
     return tasks
 
 
+def handle_failed_tasks(board: KanbanBoard) -> int:
+    """Check for FAILED tasks and retry via failure_handler. Returns count retried."""
+    retried = 0
+    failed = [t for t in board.tasks.values() if t["state"] == "FAILED"]
+
+    for task in failed:
+        retries = task.get("retry_count", 0)
+        result = handle_failure(
+            agent_id="system",
+            task_id=task["task_id"],
+            error=task.get("error", "unknown"),
+            current_retries=retries,
+        )
+
+        if result["action"] == "RETRY":
+            board.retry(task["task_id"])
+            retried += 1
+        elif result["action"] == "ESCALATE":
+            board.escalate(task["task_id"], result["reason"])
+        else:
+            board.retry(task["task_id"])
+            retried += 1
+
+    return retried
+
+
 def run_cycle(board: KanbanBoard) -> dict:
     """Run one coordination cycle."""
     now = datetime.now(timezone.utc).isoformat()
     cycle = {"at": now}
+
+    # 0. Handle failed tasks first (retry them)
+    retried = handle_failed_tasks(board)
+    cycle["retried"] = retried
 
     # 1. Fetch OpenPatala state
     works = convert_all()
@@ -67,7 +98,7 @@ def run_cycle(board: KanbanBoard) -> dict:
         board.move(t["task_id"], "READY")
     cycle["new_tasks"] = len(new_tasks)
 
-    # 3. Pick next READY task by priority
+    # 3. Pick next READY task by priority (including retried)
     ready = board.ready_tasks()
     if not ready:
         cycle["action"] = "no tasks ready"
@@ -104,6 +135,8 @@ def run_cycle(board: KanbanBoard) -> dict:
 
 def print_cycle(cycle: dict) -> None:
     print(f"\n=== CYCLE @ {cycle['at'][:19]} ===")
+    if cycle.get("retried"):
+        print(f"  retried: {cycle['retried']}")
     print(f"  works: {cycle.get('works', '?')}")
     print(f"  new_tasks: {cycle.get('new_tasks', 0)}")
     print(f"  action: {cycle.get('action', '?')}")
@@ -120,7 +153,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--cycle", action="store_true")
     ap.add_argument("--autonomous", action="store_true")
-    ap.add_argument("--max-cycles", type=int, default=3)
+    ap.add_argument("--max-cycles", type=int, default=5)
     a = ap.parse_args()
 
     board = KanbanBoard()

@@ -6,12 +6,12 @@
   "status": "DONE",
   "parsed": null,
   "raw": "OPEN",
-  "duration_s": 9.1,
-  "tokens": 346,
-  "timestamp": "2026-08-17T06:39:26.370914+00:00",
+  "duration_s": 10.6,
+  "tokens": 434,
+  "timestamp": "2026-08-17T06:50:04.802257+00:00",
   "_digest": {
     "algorithm": "sha256",
-    "value": "f773a2242ca1ba853228968f79c7dd7a7e9f79146bce2d66b6a879718eaa8ca4",
+    "value": "8c6b21378c261dee3ec3d38d9388fbdcc874fe8fd58022f60bb0300c0d84bfff",
     "encoding": "hex",
     "canonicalization": "jcs"
   },

@@ -1,0 +1,14 @@
+{
+  "id": "np_ANCHOR_TRANSLATION_akulaviratantra_f6bbe417",
+  "assertion": "ANCHOR_TRANSLATION for Akulavīratantra (A/B): FAILED",
+  "assertion_hash": "sha256:f6bbe417d663e39eacc82f811b355650cb9ee7463515b32a955e0dc5211f9fc5",
+  "evidence": "mimo-v2.5 response (0 tokens)",
+  "evidence_hash": "sha256:07fc8841b688d73a6c2e046b300bc767eeab1a53eea785a6cc9b3afb3e8173a1",
+  "provenance": {
+    "model": "mimo-v2.5",
+    "duration_s": 30.0,
+    "tokens": 0,
+    "schema": "nyah/result/1.0.0"
+  },
+  "created_at": "2026-08-17T06:50:34.916308+00:00"
+}

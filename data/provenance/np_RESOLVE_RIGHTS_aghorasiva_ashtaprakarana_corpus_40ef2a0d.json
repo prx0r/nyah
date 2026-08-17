@@ -2,13 +2,13 @@
   "id": "np_RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus_40ef2a0d",
   "assertion": "RESOLVE_RIGHTS for Aghoraśiva's doctrinal commentarial corpus (Aṣṭaprakaraṇa): OPEN",
   "assertion_hash": "sha256:40ef2a0d4a1adc77170aea4e11479ff808838bc2dc5340a82761c33ebef370a4",
-  "evidence": "mimo-v2.5 response (397 tokens)",
-  "evidence_hash": "sha256:2e858967121e62439763d5304e6879353bc7f2456b105d8bb6ccbaaa21e950ab",
+  "evidence": "mimo-v2.5 response (566 tokens)",
+  "evidence_hash": "sha256:678bd6b48bb3a7acd15b1cfa1758f13c4cba49d00213d6e4e53d738435f145a7",
   "provenance": {
     "model": "mimo-v2.5",
-    "duration_s": 19.0,
-    "tokens": 397,
+    "duration_s": 8.3,
+    "tokens": 566,
     "schema": "nyah/result/1.0.0"
   },
-  "created_at": "2026-08-17T06:39:17.130623+00:00"
+  "created_at": "2026-08-17T06:49:54.113787+00:00"
 }

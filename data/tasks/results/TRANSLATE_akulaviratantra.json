@@ -3,17 +3,17 @@
   "task_type": "TRANSLATE",
   "work_id": "akulaviratantra",
   "work_title": "Akulavīratantra (A/B)",
-  "status": "DONE",
+  "status": "FAILED",
   "parsed": null,
-  "raw": "I would be pleased to assist with a translation from the **Akulavīratantra**, but I would need a specific passage or verse to work with.\n\nThe *Akulavīratantra* (sometimes classified among the \"Kaula\" or \"Akula\" group of Tantric texts) is a Sanskrit Buddhist or Śaiva Tantric work, and its translation requires careful attention to specialized vocabulary, metaphorical language, and ritual context.\n\nSince you haven’t specified a passage, I can provide a sample translation of a well-known verse to il",
-  "duration_s": 11.8,
-  "tokens": 673,
-  "timestamp": "2026-08-17T06:39:51.887374+00:00",
+  "raw": "",
+  "duration_s": 30.0,
+  "tokens": 0,
+  "timestamp": "2026-08-17T06:51:05.040730+00:00",
   "_digest": {
     "algorithm": "sha256",
-    "value": "86bdc706cb7ff4e966f012beeba0582dea85ac3fdab2cd1ac317bc2c50abce72",
+    "value": "bc4035ca34627cfcd27f22678c7a784ab0760e7a5984c2df0769deec96bea938",
     "encoding": "hex",
     "canonicalization": "jcs"
   },
-  "_nanopub": "np_TRANSLATE_akulaviratantra_9d788902"
+  "_nanopub": "np_TRANSLATE_akulaviratantra_16a121ed"
 }

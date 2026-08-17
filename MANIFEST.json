@@ -1,35 +1,164 @@
 {
   "project": "nyah",
-  "description": "NRAH — the autonomous task coordinator for OpenPatala",
+  "description": "NRAH \u2014 the autonomous task coordinator for OpenPatala",
   "version": "0.1.0",
   "created": "2026-08-17",
   "entries": [
-    {"id": "VISION", "path": "VISION.md", "role": "project-vision", "owner": "nyah"},
-    {"id": "AGENTS", "path": "AGENTS.md", "role": "governing-rules", "owner": "nyah"},
-    {"id": "CODING-AGENT", "path": "CODING-AGENT.md", "role": "operational-discipline", "owner": "nyah"},
-    {"id": "HANDSOVER-TEMPLATE", "path": "HANDSOVER-TEMPLATE.md", "role": "handover-spec", "owner": "nyah"},
-    {"id": "HANDSOVER-2026-08-17", "path": "HANDSOVER-2026-08-17-nyah.md", "role": "build-notes", "owner": "nyah"},
-    {"id": "README", "path": "README.md", "role": "project-index", "owner": "nyah"},
-    {"id": "check", "path": "check.py", "role": "drift-gate", "owner": "nyah"},
-    {"id": "run", "path": "agent/run.py", "role": "orchestrator", "owner": "nyah"},
-    {"id": "trace", "path": "agent/trace.py", "role": "trace-query", "owner": "nyah"},
-    {"id": "ramwatch", "path": "agent/ramwatch.py", "role": "ram-watchdog", "owner": "nyah"},
-    {"id": "task_generator", "path": "pipeline/task_generator.py", "role": "task-generation", "owner": "nyah"},
-    {"id": "gap_analyzer", "path": "pipeline/gap_analyzer.py", "role": "gap-analysis", "owner": "nyah"},
-    {"id": "scheduler", "path": "pipeline/scheduler.py", "role": "task-scheduling", "owner": "nyah"},
-    {"id": "discovery", "path": "pipeline/discovery.py", "role": "source-discovery", "owner": "nyah"},
-    {"id": "worker_pool", "path": "pipeline/worker_pool.py", "role": "worker-registry", "owner": "nyah"},
-    {"id": "checkpoint", "path": "pipeline/checkpoint.py", "role": "checkpoint-dag", "owner": "nyah"},
-    {"id": "objective", "path": "pipeline/objective.py", "role": "objective-function", "owner": "nyah"},
-    {"id": "run_recorder", "path": "pipeline/run_recorder.py", "role": "content-addressed-runs", "owner": "nyah"},
-    {"id": "schemas", "path": "pipeline/schemas.py", "role": "data-contracts", "owner": "nyah"},
-    {"id": "agent_pool", "path": "pipeline/agent_pool.py", "role": "agent-lifecycle", "owner": "nyah"},
-    {"id": "kanban_board", "path": "pipeline/kanban_board.py", "role": "task-lifecycle", "owner": "nyah"},
-    {"id": "pipeline_runner", "path": "pipeline/pipeline_runner.py", "role": "autonomous-loop", "owner": "nyah"},
-    {"id": "failure_handler", "path": "pipeline/failure_handler.py", "role": "failure-handling", "owner": "nyah"},
-    {"id": "hermes_integration", "path": "pipeline/hermes_integration.py", "role": "hermes-spawning", "owner": "nyah"},
-    {"id": "openpatala_bridge", "path": "pipeline/openpatala_bridge.py", "role": "openpatala-bridge", "owner": "nyah"},
-    {"id": "HERMES", "path": "docs/HERMES.md", "role": "hermes-integration", "owner": "nyah"},
-    {"id": "NRAH-SKILL", "path": "skills/nrah/SKILL.md", "role": "hermes-skill", "owner": "nyah"}
+    {
+      "id": "VISION",
+      "path": "VISION.md",
+      "role": "project-vision",
+      "owner": "nyah"
+    },
+    {
+      "id": "AGENTS",
+      "path": "AGENTS.md",
+      "role": "governing-rules",
+      "owner": "nyah"
+    },
+    {
+      "id": "CODING-AGENT",
+      "path": "CODING-AGENT.md",
+      "role": "operational-discipline",
+      "owner": "nyah"
+    },
+    {
+      "id": "HANDSOVER-TEMPLATE",
+      "path": "HANDSOVER-TEMPLATE.md",
+      "role": "handover-spec",
+      "owner": "nyah"
+    },
+    {
+      "id": "HANDSOVER-2026-08-17",
+      "path": "HANDSOVER-2026-08-17-nyah.md",
+      "role": "build-notes",
+      "owner": "nyah"
+    },
+    {
+      "id": "README",
+      "path": "README.md",
+      "role": "project-index",
+      "owner": "nyah"
+    },
+    {
+      "id": "check",
+      "path": "check.py",
+      "role": "drift-gate",
+      "owner": "nyah"
+    },
+    {
+      "id": "run",
+      "path": "agent/run.py",
+      "role": "orchestrator",
+      "owner": "nyah"
+    },
+    {
+      "id": "trace",
+      "path": "agent/trace.py",
+      "role": "trace-query",
+      "owner": "nyah"
+    },
+    {
+      "id": "ramwatch",
+      "path": "agent/ramwatch.py",
+      "role": "ram-watchdog",
+      "owner": "nyah"
+    },
+    {
+      "id": "task_generator",
+      "path": "pipeline/task_generator.py",
+      "role": "task-generation",
+      "owner": "nyah"
+    },
+    {
+      "id": "gap_analyzer",
+      "path": "pipeline/gap_analyzer.py",
+      "role": "gap-analysis",
+      "owner": "nyah"
+    },
+    {
+      "id": "scheduler",
+      "path": "pipeline/scheduler.py",
+      "role": "task-scheduling",
+      "owner": "nyah"
+    },
+    {
+      "id": "discovery",
+      "path": "pipeline/discovery.py",
+      "role": "source-discovery",
+      "owner": "nyah"
+    },
+    {
+      "id": "worker_pool",
+      "path": "pipeline/worker_pool.py",
+      "role": "worker-registry",
+      "owner": "nyah"
+    },
+    {
+      "id": "objective",
+      "path": "pipeline/objective.py",
+      "role": "objective-function",
+      "owner": "nyah"
+    },
+    {
+      "id": "run_recorder",
+      "path": "pipeline/run_recorder.py",
+      "role": "content-addressed-runs",
+      "owner": "nyah"
+    },
+    {
+      "id": "schemas",
+      "path": "pipeline/schemas.py",
+      "role": "data-contracts",
+      "owner": "nyah"
+    },
+    {
+      "id": "agent_pool",
+      "path": "pipeline/agent_pool.py",
+      "role": "agent-lifecycle",
+      "owner": "nyah"
+    },
+    {
+      "id": "kanban_board",
+      "path": "pipeline/kanban_board.py",
+      "role": "task-lifecycle",
+      "owner": "nyah"
+    },
+    {
+      "id": "pipeline_runner",
+      "path": "pipeline/pipeline_runner.py",
+      "role": "autonomous-loop",
+      "owner": "nyah"
+    },
+    {
+      "id": "failure_handler",
+      "path": "pipeline/failure_handler.py",
+      "role": "failure-handling",
+      "owner": "nyah"
+    },
+    {
+      "id": "hermes_integration",
+      "path": "pipeline/hermes_integration.py",
+      "role": "hermes-spawning",
+      "owner": "nyah"
+    },
+    {
+      "id": "openpatala_bridge",
+      "path": "pipeline/openpatala_bridge.py",
+      "role": "openpatala-bridge",
+      "owner": "nyah"
+    },
+    {
+      "id": "HERMES",
+      "path": "docs/HERMES.md",
+      "role": "hermes-integration",
+      "owner": "nyah"
+    },
+    {
+      "id": "NRAH-SKILL",
+      "path": "skills/nrah/SKILL.md",
+      "role": "hermes-skill",
+      "owner": "nyah"
+    }
   ]
 }
