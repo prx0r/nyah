@@ -1,0 +1,898 @@
+[
+  {
+    "file": "newbuild1",
+    "id": "1-1",
+    "name": "The most important distinction",
+    "description": "IDENTITY \u2260 CONTENT \u2260 INTERPRETATION \u2260 REPRESENTATION",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-2",
+    "name": "Do NOT make hashes your permanent IDs",
+    "description": "Use opaque UUIDv7, never encode content in ID",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-3",
+    "name": "Hashes become a DigestSet",
+    "description": "Algorithm-tagged digests, crypto agility",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-4",
+    "name": "Three different hashes",
+    "description": "Raw-byte, canonical structured (JCS), semantic fingerprint",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-5",
+    "name": "Important Sanskrit Unicode trap",
+    "description": "Do not secretly NFC-normalize before hashing",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-6",
+    "name": "The truly permanent database",
+    "description": "entity_identity, event, artifact, schema_definition, ledger_checkpoint",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-7",
+    "name": "entity_identity",
+    "description": "UUIDv7 + entity_class + created_event_id + lifecycle",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-8",
+    "name": "The event is the real durable semantic record",
+    "description": "Event { event_id, event_type, entity_ids[], schema_uri, payload, payload_digest }",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-9",
+    "name": "Do not mutate events",
+    "description": "Append-only event log, never UPDATE",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-10",
+    "name": "This solves the scary question",
+    "description": "Schema changes survivable if original records remain immutable",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-11",
+    "name": "The rule should be",
+    "description": "Never migrate history. Migrate interpretation.",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-12",
+    "name": "Append-only schema registry",
+    "description": "Every schema URI versioned, immutable once published",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-13",
+    "name": "Schema versions themselves must be immutable",
+    "description": "Frozen once written, new version = new schema",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-14",
+    "name": "Define P\u0101\u1e6dala compatibility rules",
+    "description": "Semantic versioning: PATCH/MINOR/MAJOR",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-15",
+    "name": "Never reuse a retired field semantically",
+    "description": "Reserved fields within schema family",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-16",
+    "name": "Enum evolution is more dangerous than it looks",
+    "description": "Controlled string vocabularies + UNKNOWN + OTHER",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-17",
+    "name": "Strict core + extension namespace",
+    "description": "unevaluatedProperties: false + extensions object",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-18",
+    "name": "Preserve original source payloads forever",
+    "description": "Raw source as Artifact/RawObservation",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-19",
+    "name": "Reprocessing is better than migration",
+    "description": "ReprocessingRun over immutable observations",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-20",
+    "name": "Migration also becomes first-class",
+    "description": "SchemaMigration { from, to, type, lossless, known_loss }",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-21",
+    "name": "Upcasting",
+    "description": "Historical events projected into current model via migration chain",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-22",
+    "name": "Postgres becomes disposable",
+    "description": "Rebuild from artifacts + events + schemas",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-23",
+    "name": "Projection schema can evolve aggressively",
+    "description": "ALTER/DROP/REBUILD projection tables freely",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-24",
+    "name": "The OpenAlex lesson",
+    "description": "Stable entity IDs, redirects, bulk snapshots, agent-friendly APIs",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-25",
+    "name": "OpenAlex also gets bulk state right",
+    "description": "gzipped JSON Lines, incremental changes, snapshots",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-26",
+    "name": "So P\u0101\u1e6dala gets three export surfaces",
+    "description": "Current snapshot, changefiles, historical event archive",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-27",
+    "name": "Snapshot manifest",
+    "description": "SnapshotManifest { files[], digests[], root_digest, signatures }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-28",
+    "name": "Snapshots should be citable",
+    "description": "DataCite DOI releases for frozen datasets",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-29",
+    "name": "Merge is easy. Split is harder.",
+    "description": "EntitySplit with old_id \u2192 new_ids, allocation_evidence",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-30",
+    "name": "Never delete IDs",
+    "description": "ACTIVE/MERGED/SPLIT/RETRACTED/WITHDRAWN statuses",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-31",
+    "name": "Immutability must not mean 'we can never delete bytes'",
+    "description": "ArtifactAvailability { PRESENT/WITHDRAWN/PURGED }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-32",
+    "name": "Hashes do not prove truth",
+    "description": "FIXITY \u2260 AUTHORITY \u2260 TRUTH \u2014 keep separate",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-33",
+    "name": "Our current event-chain design also needs improvement",
+    "description": "Batches + Merkle checkpoints, not global JSONL chain",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-34",
+    "name": "Better ledger design",
+    "description": "LedgerCheckpoint { merkle_root, event_cursor, signatures }",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-35",
+    "name": "Why Merkle checkpoints",
+    "description": "Many events \u2192 one independently verifiable root",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-36",
+    "name": "Sign checkpoints, not everything",
+    "description": "Algorithm-tagged signatures, not ed25519 forever",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-37",
+    "name": "Independent checkpoints matter",
+    "description": "Publish checkpoint root independently (git, archive, mirror)",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-38",
+    "name": "OCFL is useful, but I would not use it blindly",
+    "description": "OCFL for compound archival, simple blob store for individual content",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-39",
+    "name": "Raw R2 structure therefore becomes disposable too",
+    "description": "Storage location is metadata, artifact ID doesn't change",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-40",
+    "name": "Exact derivation provenance",
+    "description": "PROV-O mapping: Entity/Activity/Agent",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-41",
+    "name": "SLSA has another excellent mechanism",
+    "description": "DerivationAttestation: subject, builder, inputs, outputs",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-42",
+    "name": "For LLM calls, be honest about reproducibility",
+    "description": "Capture model, provider, config, prompt digest \u2014 NON_DETERMINISTIC",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-43",
+    "name": "Passages need stronger anchors than offsets",
+    "description": "TextAnchor with position + quote + XPath selectors",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-44",
+    "name": "IIIF should remain an adapter",
+    "description": "Export to IIIF, don't couple internal ontology",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-45",
+    "name": "This general rule applies to every external standard",
+    "description": "P\u0101\u1e6dala core \u2192 adapters \u2192 external formats",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-46",
+    "name": "API version and schema version are different things",
+    "description": "API /v1 is consumer contract, schema is persisted object contract",
+    "status": "done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-47",
+    "name": "API v1 longevity",
+    "description": "Keep /v1 stable, add fields, new semantics = /v2",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuild1",
+    "id": "1-48",
+    "name": "External clients must not be canonical writers",
+    "description": "ContributionProposal, not direct table writes",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-1",
+    "name": "The architectural law",
+    "description": "IDENTITY \u2260 CONTENT \u2260 INTERPRETATION \u2260 REPRESENTATION",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-2",
+    "name": "Three permanent storage layers",
+    "description": "Bronze (raw) / Silver (assertions) / Gold (canonical)",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-3",
+    "name": "Every object needs the same envelope",
+    "description": "CanonicalEnvelope { id, version_id, type, schema_version, provenance_refs }",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-4",
+    "name": "Core provider schema",
+    "description": "SourceProvider { id, slug, name, provider_type, status }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-5",
+    "name": "SourceEndpoint",
+    "description": "SourceEndpoint { url, endpoint_type, adapter, capabilities }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-6",
+    "name": "Rights must be first-class before fetch",
+    "description": "RightsPolicy { discovery, metadata_fetch, content_fetch, compute, ... }",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-7",
+    "name": "RawObservation",
+    "description": "RawObservation { id, provider_id, source_url, payload_hash, ... }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-8",
+    "name": "Artifact",
+    "description": "Artifact { id, sha256, byte_length, mime_type, storage_uri }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-9",
+    "name": "Extracted data becomes assertions",
+    "description": "slug \u2192 CandidateAssertion, not Work.author",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-10",
+    "name": "Candidate identities",
+    "description": "EntityCandidate { provider_id, external_resource_id, assertion_ids }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-11",
+    "name": "Canonical Work",
+    "description": "Work { id, preferred_title, work_type, external_ids }",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-12",
+    "name": "Assertions are the real metadata graph",
+    "description": "Assertion { subject_id, predicate, object_id, asserted_by, state }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-13",
+    "name": "Identity relations",
+    "description": "IdentityAssertion { subject, object, relation, evidence, confidence }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-14",
+    "name": "Person",
+    "description": "Person { id, preferred_name, external_ids }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-15",
+    "name": "Institution",
+    "description": "Institution { id, preferred_name, external_ids }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-16",
+    "name": "Witness / manuscript",
+    "description": "Witness { work_id, holding_institution_id, shelfmark }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-17",
+    "name": "Surrogate",
+    "description": "Surrogate { witness_id, manifestation_type, iiif_manifest }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-18",
+    "name": "Edition",
+    "description": "Edition { work_id, title, publication_assertions, editor_assertions }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-19",
+    "name": "EText",
+    "description": "EText { work_id, edition_id, artifact_id, text_format, language }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-20",
+    "name": "Passage must separate logical citation from occurrence",
+    "description": "LogicalPassage + TextOccurrence",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-21",
+    "name": "Exact text selectors",
+    "description": "TextAnchor { selectors: [TextPosition, TextQuote, XPath] }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-22",
+    "name": "Translation entity",
+    "description": "Translation { work_id, target_language, translator_ids, completeness }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-23",
+    "name": "P\u0101\u1e6dala-generated translation",
+    "description": "TranslationGeneration { factory_profile, model_runs }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-24",
+    "name": "Translation availability becomes a projection",
+    "description": "TranslationAvailability { state, translations[], searched_at }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-25",
+    "name": "SearchEvent is important",
+    "description": "SearchEvent { query, providers_searched, outcome }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-26",
+    "name": "Source availability",
+    "description": "SourceAvailability { work_id, best_available, etext_ids }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-27",
+    "name": "Work completeness",
+    "description": "WorkCompleteness { identity, source, translation, alignment, evaluation }",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-28",
+    "name": "External IDs",
+    "description": "ExternalIdentifier { entity_id, scheme, value }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-29",
+    "name": "Authority dimensions",
+    "description": "AuthorityEvidence { subject_id, dimension, state, evidence_refs }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-30",
+    "name": "Provider independence",
+    "description": "SourceLineage { source_a, source_b, relationship }",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-31",
+    "name": "Autonomous OpenP\u0101\u1e6dala",
+    "description": "SOURCE REGISTRY \u2192 scan \u2192 DISCOVERY \u2192 FETCH \u2192 EXTRACT \u2192 RESOLVE",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-32",
+    "name": "Mode A \u2014 known adapter sweeps",
+    "description": "PANDiT, GRETIL, FoJin, Archive.org, OpenAlex, etc.",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-33",
+    "name": "Mode B \u2014 protocol discovery",
+    "description": "homepage \u2192 robots \u2192 sitemap \u2192 feeds \u2192 API \u2192 IIIF \u2192 OAI-PMH",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-34",
+    "name": "Mode C \u2014 graph expansion",
+    "description": "Every observed item yields leads",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-35",
+    "name": "Mode D \u2014 gap-driven discovery",
+    "description": "DiscoveryObjective from missing state",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-36",
+    "name": "Mode E \u2014 frontier source discovery",
+    "description": "Agents find genuinely unknown sources",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-37",
+    "name": "SourceCandidate",
+    "description": "SourceCandidate { discovered_url, suspected_capabilities, status }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-38",
+    "name": "Source onboarding workflow",
+    "description": "DISCOVER\u2192POLICY_CHECK\u2192CAPABILITY_PROBE\u2192SAMPLE\u2192NORMALIZE\u2192ADOPT",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-39",
+    "name": "Crawl policy",
+    "description": "CrawlPolicy { robots, max_requests_per_second, allowed_paths }",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-40",
+    "name": "Discovery scoring",
+    "description": "SourceUtility { novelty_yield, source_quality, authority_value, ... }",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-41",
+    "name": "The autonomous loop",
+    "description": "scan \u2192 discovery \u2192 fetch \u2192 extract \u2192 resolve \u2192 match/conflict/new",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-42",
+    "name": "Use NRAH only for coordination",
+    "description": "NRAH: what tasks are ready? which gap? which worker?",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-43",
+    "name": "TaskCandidate can be generated deterministically",
+    "description": "if source==NONE: emit FIND_SOURCE",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-44",
+    "name": "Internet discovery agents output contract",
+    "description": "JSON: { candidate_sources: [{url, evidence, capabilities}] }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-45",
+    "name": "Resolver architecture",
+    "description": "R0-R5 staged resolver (exact\u2192crosswalk\u2192bibliographic\u2192fuzzy\u2192multi-source\u2192human)",
+    "status": "done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-46",
+    "name": "Identity proposal",
+    "description": "ResolutionProposal { candidate_ids, proposed_entity, confidence, auto_action }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-47",
+    "name": "Text fingerprinting",
+    "description": "MinHash, shingles, passage overlap for dedup",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-48",
+    "name": "Bundled scans need ContainedWorkCandidate",
+    "description": "One archive item \u2192 multiple works",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-49",
+    "name": "Generic document structure",
+    "description": "DocumentSegment { segment_type, ordinal, text, locator }",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildmainspec",
+    "id": "ms-50",
+    "name": "Passage layer can compile from segments later",
+    "description": "DocumentSegment \u2192 LogicalPassage",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-1",
+    "name": "The ecosystem map",
+    "description": "Steal everything except the epistemic layer",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-2",
+    "name": "Gyan Bharatam is a reason not to build",
+    "description": "Don't compete with govt manuscript repository",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-3",
+    "name": "PANDiT is not a competitor",
+    "description": "Treat as observation, not truth",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-4",
+    "name": "Muktabodha + IFP are strategically valuable",
+    "description": "Specialist \u015aaiva corpus, approach as partner",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-5",
+    "name": "HMML gives us the right operating model",
+    "description": "Work through local institutions, not centralize",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-6",
+    "name": "IIIF should own manuscript pixels",
+    "description": "IIIF + Mirador, don't build proprietary viewer",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-7",
+    "name": "TEI should own interchange",
+    "description": "Don't reinvent textual apparatus",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-8",
+    "name": "Modify CTS plan",
+    "description": "DTS as adapter target, not hardwired",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-9",
+    "name": "Do not build OpenAlex but again",
+    "description": "Use OpenAlex/Crossref, add epistemic layer",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-10",
+    "name": "ORCID and ROR upstream identity",
+    "description": "Use external canonical identifiers",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-11",
+    "name": "Don't build generic peer-review",
+    "description": "Use OpenReview patterns, build atomic adjudication",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-12",
+    "name": "CRMinf is close to our model",
+    "description": "Event-centric, argumentation, inference",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-13",
+    "name": "Data architecture future-resistant",
+    "description": "RecordEnvelope + Postgres as projection",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-14",
+    "name": "Crux is nowhere near enough",
+    "description": "Need MeaningGraph + ExperienceIR",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-15",
+    "name": "Layer A: MeaningGraph",
+    "description": "ConceptFrame, EventFrame, EntityState, ChronologyConstraint",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-16",
+    "name": "Layer B: ExperienceIR",
+    "description": "LearningObjective, NarrativeUnit, InteractionModel",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-17",
+    "name": "Add epistemic_mode everywhere",
+    "description": "SOURCE_ASSERTED/SCHOLAR_RECONSTRUCTS/P\u0100\u1e6cALA_INFERRED",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-18",
+    "name": "Add ProjectionContract",
+    "description": "Every generated artifact carries contract",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-19",
+    "name": "Web Annotation matters",
+    "description": "Every statement points to passage/image/time",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-20",
+    "name": "Canonical semantic stack",
+    "description": "Source \u2192 Assertion \u2192 Identity \u2192 Adjudication \u2192 Projection",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-21",
+    "name": "How we expose it",
+    "description": "Public human API + Epistemic API + Agent interface",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-22",
+    "name": "Add a change feed",
+    "description": "GET /v1/changes?since=<cursor>",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-23",
+    "name": "AI companies consume products",
+    "description": "Sell scarce things, not commoditized inference",
+    "status": "done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-24",
+    "name": "Direct AI-lab product",
+    "description": "P\u0101\u1e6dala Bench / Data on HuggingFace",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-25",
+    "name": "Market lock is not secrecy",
+    "description": "Reference + Agent + Scholar + Institutional + Evidence-history dependency",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-26",
+    "name": "Make Atlas metadata free",
+    "description": "Don't tollbooth the substrate",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-27",
+    "name": "Scholar economics",
+    "description": "Published position / Live attestation / Licensed contribution",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-28",
+    "name": "Product roadmap",
+    "description": "0.5\u21921\u21921.5\u21922\u21922.5\u21923",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-29",
+    "name": "P\u0101\u1e6dala 1",
+    "description": "Verified Translation Network: Translate + Audit + Bench",
+    "status": "not_done"
+  },
+  {
+    "file": "newbuildplayers",
+    "id": "p-30",
+    "name": "P\u0101\u1e6dala 1.5",
+    "description": "Live Scholarship: scholar reviews, correction propagates",
+    "status": "not_done"
+  }
+]
