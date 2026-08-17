@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """pipeline/pipeline_runner.py — the autonomous coordination loop.
 
-Runs cycles of: scan gaps → pick task → call OpenPatala step → log result → repeat
+Reads OpenPatala API → finds gaps → generates tasks → dispatches → executes via mimo-v2.5 → updates kanban.
 
 Usage:
   python3 pipeline/pipeline_runner.py --cycle
@@ -10,6 +10,7 @@ Usage:
 from __future__ import annotations
 
 import json
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -17,83 +18,101 @@ ROOT = Path(__file__).resolve().parent.parent
 import sys
 sys.path.insert(0, str(ROOT / "pipeline"))
 
-from gap_analyzer import analyze_work
 from openpatala_bridge import convert_all
-from openpatala_executor import compile_work, verify_work, report, run_step
+from gap_analyzer import analyze_work
+from kanban_board import KanbanBoard
+from agent_executor import execute_task, RESULTS_DIR
 
-RESULTS_DIR = ROOT / "data" / "tasks" / "results"
-RESULTS_DIR.mkdir(parents=True, exist_ok=True)
-
-
-def get_works_needing_work() -> list[dict]:
-    """Find works that need actual pipeline steps run."""
-    works = convert_all()
-    needs_compile = []
-    needs_verify = []
-
-    for w in works:
-        source = w.get("source_state", "NONE")
-        translation = w.get("translation_state", "NONE_KNOWN")
-
-        # Works with source ready but not compiled
-        if source in ("ETEXT", "SCHOLARLY_ETEXT") and translation in ("NONE_KNOWN", "PARTIAL"):
-            needs_compile.append(w)
-
-        # Works with existing translations that could be verified
-        if translation in ("EXISTING", "PARTIAL"):
-            needs_verify.append(w)
-
-    return needs_compile, needs_verify
+CYCLE_LOG = ROOT / "data" / "runs" / "pipeline-cycles.jsonl"
+CYCLE_LOG.parent.mkdir(parents=True, exist_ok=True)
 
 
-def run_cycle() -> dict:
+def get_tasks_for_execution(board: KanbanBoard, works: list[dict],
+                            max_tasks: int = 5) -> list[dict]:
+    """Generate tasks from works that don't already have tasks on the board."""
+    tasks = []
+    for work in works:
+        if len(tasks) >= max_tasks:
+            break
+        gaps = analyze_work(work)
+        for g in gaps:
+            if len(tasks) >= max_tasks:
+                break
+            task_id = f"{g.gap_type}_{g.work_id}"
+            if task_id not in board.tasks:
+                tasks.append({
+                    "task_id": task_id,
+                    "task_type": g.gap_type,
+                    "work_id": g.work_id,
+                    "work_title": g.work_title,
+                    "priority": g.priority,
+                })
+    return tasks
+
+
+def run_cycle(board: KanbanBoard) -> dict:
     """Run one coordination cycle."""
     now = datetime.now(timezone.utc).isoformat()
     cycle = {"at": now}
 
-    # Step 1: Get OpenPatala status
-    r = report()
-    cycle["openpatala"] = r["stdout"][:200]
+    # 1. Fetch OpenPatala state
+    works = convert_all()
+    cycle["works"] = len(works)
 
-    # Step 2: Find works needing compilation
-    needs_compile, needs_verify = get_works_needing_work()
-    cycle["needs_compile"] = len(needs_compile)
-    cycle["needs_verify"] = len(needs_verify)
+    # 2. Generate tasks not yet on board
+    new_tasks = get_tasks_for_execution(board, works, max_tasks=5)
+    for t in new_tasks:
+        board.add_task(t["task_id"], t["task_type"], t["work_id"],
+                       t["work_title"], t["priority"])
+        board.move(t["task_id"], "READY")
+    cycle["new_tasks"] = len(new_tasks)
 
-    # Step 3: Pick the most valuable work to compile (first one)
-    result = None
-    if needs_compile:
-        work = needs_compile[0]
-        work_name = work.get("_openpatala", {}).get("work", work.get("preferred_title", "unknown"))
-        print(f"  compiling: {work_name}")
-        result = compile_work(work_name)
-        cycle["action"] = f"compile:{work_name}"
-        cycle["result"] = result["status"]
-        cycle["duration_s"] = result["duration_s"]
-        cycle["output"] = result["stdout"][:200]
+    # 3. Pick next READY task by priority
+    ready = board.ready_tasks()
+    if not ready:
+        cycle["action"] = "no tasks ready"
+        return cycle
 
-        # Save result
-        fname = f"compile_{work_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-        (RESULTS_DIR / fname).write_text(json.dumps(result, indent=2))
+    ready.sort(key=lambda t: -t.get("priority", 0))
+    task = ready[0]
 
-    elif needs_verify:
-        work = needs_verify[0]
-        work_name = work.get("_openpatala", {}).get("work", work.get("preferred_title", "unknown"))
-        print(f"  verifying: {work_name}")
-        result = verify_work(work_name)
-        cycle["action"] = f"verify:{work_name}"
-        cycle["result"] = result["status"]
-        cycle["duration_s"] = result["duration_s"]
-        cycle["output"] = result["stdout"][:200]
+    # 4. Mark as in progress
+    board.start_work(task["task_id"])
 
-        fname = f"verify_{work_name}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
-        (RESULTS_DIR / fname).write_text(json.dumps(result, indent=2))
+    # 5. Execute via mimo-v2.5
+    result = execute_task(
+        task_type=task["task_type"],
+        task_id=task["task_id"],
+        work_id=task.get("work_id", ""),
+        work_title=task.get("work_title", ""),
+        board=board,
+    )
 
-    else:
-        cycle["action"] = "none"
-        cycle["result"] = "all caught up"
+    cycle["action"] = task["task_type"]
+    cycle["work"] = task.get("work_title", "")
+    cycle["result_status"] = result["status"]
+    cycle["duration_s"] = result["duration_s"]
+    cycle["tokens"] = result["tokens"]
+    cycle["answer"] = result["raw"][:200] if result["raw"] else ""
+
+    # 6. Log cycle
+    with open(CYCLE_LOG, "a") as f:
+        f.write(json.dumps(cycle, ensure_ascii=False) + "\n")
 
     return cycle
+
+
+def print_cycle(cycle: dict) -> None:
+    print(f"\n=== CYCLE @ {cycle['at'][:19]} ===")
+    print(f"  works: {cycle.get('works', '?')}")
+    print(f"  new_tasks: {cycle.get('new_tasks', 0)}")
+    print(f"  action: {cycle.get('action', '?')}")
+    if cycle.get("work"):
+        print(f"  work: {cycle['work']}")
+    if cycle.get("result_status"):
+        print(f"  status: {cycle['result_status']} ({cycle.get('duration_s',0):.1f}s, {cycle.get('tokens',0)} tokens)")
+    if cycle.get("answer"):
+        print(f"  answer: {cycle['answer'][:150]}")
 
 
 def main():
@@ -104,29 +123,33 @@ def main():
     ap.add_argument("--max-cycles", type=int, default=3)
     a = ap.parse_args()
 
+    board = KanbanBoard()
+
     if a.cycle:
-        c = run_cycle()
-        print(json.dumps(c, indent=2))
+        c = run_cycle(board)
+        print_cycle(c)
         return 0
 
     if a.autonomous:
-        print(f"=== AUTONOMOUS MODE ({a.max_cycles} cycles) ===\n")
+        print(f"=== AUTONOMOUS ({a.max_cycles} cycles, mimo-v2.5) ===")
         for i in range(a.max_cycles):
             print(f"\n--- Cycle {i+1}/{a.max_cycles} ---")
-            c = run_cycle()
-            print(json.dumps(c, indent=2))
-
-            if c.get("result") == "TIMEOUT":
-                print("  TIMEOUT — stopping")
-                break
+            c = run_cycle(board)
+            print_cycle(c)
 
         # Summary
-        results = list(RESULTS_DIR.glob("*.json"))
-        done = sum(1 for f in results if json.loads(f.read_text()).get("status") == "DONE")
-        failed = sum(1 for f in results if json.loads(f.read_text()).get("status") == "FAILED")
         print(f"\n=== SUMMARY ===")
-        print(f"  total results: {len(results)}")
-        print(f"  done: {done}  failed: {failed}")
+        st = board.status()
+        print(f"  total tasks: {st['total']}")
+        for s, n in st["by_state"].items():
+            print(f"    {s:15} {n}")
+
+        results = list(RESULTS_DIR.glob("*.json"))
+        print(f"  results saved: {len(results)}")
+        for f in sorted(results)[-3:]:
+            r = json.loads(f.read_text())
+            print(f"    {r['status']:6} {r['task_type']:22} {r['work_title']:25} {r['duration_s']:.0f}s")
+
         return 0
 
     ap.print_help()
@@ -134,5 +157,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import sys
     sys.exit(main())

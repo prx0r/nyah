@@ -1,73 +1,651 @@
 {
-  "updated": "2026-08-17T05:58:33.583618+00:00",
+  "updated": "2026-08-17T06:40:14.736579+00:00",
   "tasks": {
-    "real_RIGHTS_PTW_mrgendragama": {
-      "task_id": "real_RIGHTS_PTW_mrgendragama",
-      "task_type": "RESOLVE_RIGHTS",
-      "work_id": "PTW_mrgendragama",
-      "work_title": "Mrgendragama",
+    "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus": {
+      "task_id": "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus",
+      "task_type": "FIND_ETEXT",
+      "work_id": "aghorasiva_ashtaprakarana_corpus",
+      "work_title": "Aghoraśiva's doctrinal commentarial corpus (Aṣṭaprakaraṇa)",
       "state": "READY",
-      "priority": 0.8,
+      "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T05:58:33.582064+00:00",
-      "updated_at": "2026-08-17T05:58:33.582281+00:00",
+      "created_at": "2026-08-17T06:38:58.161192+00:00",
+      "updated_at": "2026-08-17T06:38:58.161463+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T05:58:33.582064+00:00"
+          "at": "2026-08-17T06:38:58.161192+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T05:58:33.582281+00:00",
+          "at": "2026-08-17T06:38:58.161463+00:00",
           "reason": ""
         }
       ],
       "retry_count": 0
     },
-    "real_RIGHTS_PTW_kiranatantra": {
-      "task_id": "real_RIGHTS_PTW_kiranatantra",
+    "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus": {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
       "task_type": "RESOLVE_RIGHTS",
-      "work_id": "PTW_kiranatantra",
-      "work_title": "Kiranatantra",
-      "state": "READY",
-      "priority": 0.8,
+      "work_id": "aghorasiva_ashtaprakarana_corpus",
+      "work_title": "Aghoraśiva's doctrinal commentarial corpus (Aṣṭaprakaraṇa)",
+      "state": "DONE",
+      "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T05:58:33.582444+00:00",
-      "updated_at": "2026-08-17T05:58:33.583144+00:00",
+      "created_at": "2026-08-17T06:38:58.161666+00:00",
+      "updated_at": "2026-08-17T06:39:17.131644+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T05:58:33.582444+00:00"
+          "at": "2026-08-17T06:38:58.161666+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T05:58:33.583144+00:00",
+          "at": "2026-08-17T06:38:58.162413+00:00",
+          "reason": ""
+        },
+        {
+          "state": "IN_PROGRESS",
+          "at": "2026-08-17T06:38:58.165479+00:00",
+          "reason": ""
+        },
+        {
+          "state": "DONE",
+          "at": "2026-08-17T06:39:17.131644+00:00",
+          "reason": "mimo-v2.5: OPEN"
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_aghorasiva_tattvaprakasika": {
+      "task_id": "FIND_ETEXT_aghorasiva_tattvaprakasika",
+      "task_type": "FIND_ETEXT",
+      "work_id": "aghorasiva_tattvaprakasika",
+      "work_title": "Aghoraśiva's Tattvaprakāśikā",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:38:58.162811+00:00",
+      "updated_at": "2026-08-17T06:38:58.163326+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:38:58.162811+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:38:58.163326+00:00",
           "reason": ""
         }
       ],
       "retry_count": 0
     },
-    "real_RIGHTS_PTW_ajitagama": {
-      "task_id": "real_RIGHTS_PTW_ajitagama",
+    "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika": {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
       "task_type": "RESOLVE_RIGHTS",
-      "work_id": "PTW_ajitagama",
-      "work_title": "Ajitagama",
-      "state": "READY",
-      "priority": 0.8,
+      "work_id": "aghorasiva_tattvaprakasika",
+      "work_title": "Aghoraśiva's Tattvaprakāśikā",
+      "state": "DONE",
+      "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T05:58:33.583355+00:00",
-      "updated_at": "2026-08-17T05:58:33.583590+00:00",
+      "created_at": "2026-08-17T06:38:58.163714+00:00",
+      "updated_at": "2026-08-17T06:39:26.371479+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T05:58:33.583355+00:00"
+          "at": "2026-08-17T06:38:58.163714+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T05:58:33.583590+00:00",
+          "at": "2026-08-17T06:38:58.164241+00:00",
+          "reason": ""
+        },
+        {
+          "state": "IN_PROGRESS",
+          "at": "2026-08-17T06:39:17.240770+00:00",
+          "reason": ""
+        },
+        {
+          "state": "DONE",
+          "at": "2026-08-17T06:39:26.371479+00:00",
+          "reason": "mimo-v2.5: OPEN"
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_aghorasiva_tattvasamgrahalaghutika": {
+      "task_id": "FIND_ETEXT_aghorasiva_tattvasamgrahalaghutika",
+      "task_type": "FIND_ETEXT",
+      "work_id": "aghorasiva_tattvasamgrahalaghutika",
+      "work_title": "Aghoraśiva's Tattvasaṃgrahalaghuṭīkā",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:38:58.164639+00:00",
+      "updated_at": "2026-08-17T06:38:58.165007+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:38:58.164639+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:38:58.165007+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika": {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "aghorasiva_tattvasamgrahalaghutika",
+      "work_title": "Aghoraśiva's Tattvasaṃgrahalaghuṭīkā",
+      "state": "DONE",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:17.234810+00:00",
+      "updated_at": "2026-08-17T06:40:14.736542+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:17.234810+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:17.235464+00:00",
+          "reason": ""
+        },
+        {
+          "state": "IN_PROGRESS",
+          "at": "2026-08-17T06:39:52.001307+00:00",
+          "reason": ""
+        },
+        {
+          "state": "DONE",
+          "at": "2026-08-17T06:40:14.736542+00:00",
+          "reason": "mimo-v2.5: Open"
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_aghorasivas_ullekhini_on_ratnatraya": {
+      "task_id": "FIND_ETEXT_aghorasivas_ullekhini_on_ratnatraya",
+      "task_type": "FIND_ETEXT",
+      "work_id": "aghorasivas_ullekhini_on_ratnatraya",
+      "work_title": "Aghoraśiva's Ullekhinī on the Ratnatraya",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:17.236708+00:00",
+      "updated_at": "2026-08-17T06:39:17.237162+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:17.236708+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:17.237162+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_aghorasivas_ullekhini_on_ratnatraya": {
+      "task_id": "RESOLVE_RIGHTS_aghorasivas_ullekhini_on_ratnatraya",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "aghorasivas_ullekhini_on_ratnatraya",
+      "work_title": "Aghoraśiva's Ullekhinī on the Ratnatraya",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:17.237844+00:00",
+      "updated_at": "2026-08-17T06:39:17.238283+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:17.237844+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:17.238283+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_aitareyaaranyaka": {
+      "task_id": "FIND_ETEXT_aitareyaaranyaka",
+      "task_type": "FIND_ETEXT",
+      "work_id": "aitareyaaranyaka",
+      "work_title": "Aitareya Āraṇyaka (Ṛgveda)",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:17.238696+00:00",
+      "updated_at": "2026-08-17T06:39:17.239211+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:17.238696+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:17.239211+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_aitareyaaranyaka": {
+      "task_id": "RESOLVE_RIGHTS_aitareyaaranyaka",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "aitareyaaranyaka",
+      "work_title": "Aitareya Āraṇyaka (Ṛgveda)",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:17.239648+00:00",
+      "updated_at": "2026-08-17T06:39:17.240291+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:17.239648+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:17.240291+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_ajitagama": {
+      "task_id": "FIND_ETEXT_ajitagama",
+      "task_type": "FIND_ETEXT",
+      "work_id": "ajitagama",
+      "work_title": "Ajitāgama / Ajitamahātantra",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:26.441727+00:00",
+      "updated_at": "2026-08-17T06:39:26.442412+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:26.441727+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:26.442412+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_ajitagama": {
+      "task_id": "RESOLVE_RIGHTS_ajitagama",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "ajitagama",
+      "work_title": "Ajitāgama / Ajitamahātantra",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:26.444737+00:00",
+      "updated_at": "2026-08-17T06:39:26.447263+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:26.444737+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:26.447263+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "TRANSLATE_akulaviratantra": {
+      "task_id": "TRANSLATE_akulaviratantra",
+      "task_type": "TRANSLATE",
+      "work_id": "akulaviratantra",
+      "work_title": "Akulavīratantra (A/B)",
+      "state": "DONE",
+      "priority": 0.2688,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:26.448383+00:00",
+      "updated_at": "2026-08-17T06:39:51.888295+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:26.448383+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:26.448947+00:00",
+          "reason": ""
+        },
+        {
+          "state": "IN_PROGRESS",
+          "at": "2026-08-17T06:39:40.059061+00:00",
+          "reason": ""
+        },
+        {
+          "state": "DONE",
+          "at": "2026-08-17T06:39:51.888295+00:00",
+          "reason": "mimo-v2.5: I would be pleased to assist with a translation from the **Akulavīratantra**, but I would need a spe"
+        }
+      ],
+      "retry_count": 0
+    },
+    "ANCHOR_TRANSLATION_akulaviratantra": {
+      "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
+      "task_type": "ANCHOR_TRANSLATION",
+      "work_id": "akulaviratantra",
+      "work_title": "Akulavīratantra (A/B)",
+      "state": "DONE",
+      "priority": 0.336,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:26.449357+00:00",
+      "updated_at": "2026-08-17T06:39:39.954220+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:26.449357+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:26.449611+00:00",
+          "reason": ""
+        },
+        {
+          "state": "IN_PROGRESS",
+          "at": "2026-08-17T06:39:26.450623+00:00",
+          "reason": ""
+        },
+        {
+          "state": "DONE",
+          "at": "2026-08-17T06:39:39.954220+00:00",
+          "reason": "mimo-v2.5: I understand you're asking about the textual alignment between the **Akulavīratantra** (specifically"
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_akulaviratantra": {
+      "task_id": "RESOLVE_RIGHTS_akulaviratantra",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "akulaviratantra",
+      "work_title": "Akulavīratantra (A/B)",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:26.450073+00:00",
+      "updated_at": "2026-08-17T06:39:26.450355+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:26.450073+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:26.450355+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_anonymous_ratnatrayapariksavyakhya": {
+      "task_id": "FIND_ETEXT_anonymous_ratnatrayapariksavyakhya",
+      "task_type": "FIND_ETEXT",
+      "work_id": "anonymous_ratnatrayapariksavyakhya",
+      "work_title": "Anonymous Ratnatrayaparīkṣā-vyākhyā (variant)",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:40.051716+00:00",
+      "updated_at": "2026-08-17T06:39:40.052372+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:40.051716+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:40.052372+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_anonymous_ratnatrayapariksavyakhya": {
+      "task_id": "RESOLVE_RIGHTS_anonymous_ratnatrayapariksavyakhya",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "anonymous_ratnatrayapariksavyakhya",
+      "work_title": "Anonymous Ratnatrayaparīkṣā-vyākhyā (variant)",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:40.053194+00:00",
+      "updated_at": "2026-08-17T06:39:40.053978+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:40.053194+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:40.053978+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_atharvasiraupanisad": {
+      "task_id": "FIND_ETEXT_atharvasiraupanisad",
+      "task_type": "FIND_ETEXT",
+      "work_id": "atharvasiraupanisad",
+      "work_title": "Atharvaśiras / Atharvaśira Upaniṣad",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:40.054716+00:00",
+      "updated_at": "2026-08-17T06:39:40.055401+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:40.054716+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:40.055401+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_atharvasiraupanisad": {
+      "task_id": "RESOLVE_RIGHTS_atharvasiraupanisad",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "atharvasiraupanisad",
+      "work_title": "Atharvaśiras / Atharvaśira Upaniṣad",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:40.056111+00:00",
+      "updated_at": "2026-08-17T06:39:40.056745+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:40.056111+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:40.056745+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_atharvavedapaippalada": {
+      "task_id": "FIND_ETEXT_atharvavedapaippalada",
+      "task_type": "FIND_ETEXT",
+      "work_id": "atharvavedapaippalada",
+      "work_title": "Atharvaveda (Paippalāda recension)",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:40.057457+00:00",
+      "updated_at": "2026-08-17T06:39:40.058270+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:40.057457+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:40.058270+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_atharvavedapaippalada": {
+      "task_id": "RESOLVE_RIGHTS_atharvavedapaippalada",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "atharvavedapaippalada",
+      "work_title": "Atharvaveda (Paippalāda recension)",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:51.993337+00:00",
+      "updated_at": "2026-08-17T06:39:51.994316+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:51.993337+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:51.994316+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_atharvavedasaunaka": {
+      "task_id": "FIND_ETEXT_atharvavedasaunaka",
+      "task_type": "FIND_ETEXT",
+      "work_id": "atharvavedasaunaka",
+      "work_title": "Atharvaveda (Śaunaka recension)",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:51.995554+00:00",
+      "updated_at": "2026-08-17T06:39:51.996258+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:51.995554+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:51.996258+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_atharvavedasaunaka": {
+      "task_id": "RESOLVE_RIGHTS_atharvavedasaunaka",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "atharvavedasaunaka",
+      "work_title": "Atharvaveda (Śaunaka recension)",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:51.997003+00:00",
+      "updated_at": "2026-08-17T06:39:51.997734+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:51.997003+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:51.997734+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "FIND_ETEXT_bhagavadgita_sarvatobhadra": {
+      "task_id": "FIND_ETEXT_bhagavadgita_sarvatobhadra",
+      "task_type": "FIND_ETEXT",
+      "work_id": "bhagavadgita_sarvatobhadra",
+      "work_title": "Bhagavadgītā-Sarvatobhadra — Rāmakaṇṭha",
+      "state": "READY",
+      "priority": 0.1152,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:51.998298+00:00",
+      "updated_at": "2026-08-17T06:39:51.999008+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:51.998298+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:51.999008+00:00",
+          "reason": ""
+        }
+      ],
+      "retry_count": 0
+    },
+    "RESOLVE_RIGHTS_bhagavadgita_sarvatobhadra": {
+      "task_id": "RESOLVE_RIGHTS_bhagavadgita_sarvatobhadra",
+      "task_type": "RESOLVE_RIGHTS",
+      "work_id": "bhagavadgita_sarvatobhadra",
+      "work_title": "Bhagavadgītā-Sarvatobhadra — Rāmakaṇṭha",
+      "state": "READY",
+      "priority": 0.135,
+      "assigned_agent": null,
+      "metadata": {},
+      "created_at": "2026-08-17T06:39:51.999738+00:00",
+      "updated_at": "2026-08-17T06:39:52.000501+00:00",
+      "state_history": [
+        {
+          "state": "BACKLOG",
+          "at": "2026-08-17T06:39:51.999738+00:00"
+        },
+        {
+          "state": "READY",
+          "at": "2026-08-17T06:39:52.000501+00:00",
           "reason": ""
         }
       ],
@@ -76,25 +654,249 @@
   },
   "history": [
     {
-      "task_id": "real_RIGHTS_PTW_mrgendragama",
+      "task_id": "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T05:58:33.582281+00:00",
+      "at": "2026-08-17T06:38:58.161463+00:00",
       "reason": ""
     },
     {
-      "task_id": "real_RIGHTS_PTW_kiranatantra",
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T05:58:33.583144+00:00",
+      "at": "2026-08-17T06:38:58.162413+00:00",
       "reason": ""
     },
     {
-      "task_id": "real_RIGHTS_PTW_ajitagama",
+      "task_id": "FIND_ETEXT_aghorasiva_tattvaprakasika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T05:58:33.583590+00:00",
+      "at": "2026-08-17T06:38:58.163326+00:00",
       "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:38:58.164241+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "FIND_ETEXT_aghorasiva_tattvasamgrahalaghutika",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:38:58.165007+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
+      "from": "READY",
+      "to": "IN_PROGRESS",
+      "at": "2026-08-17T06:38:58.165479+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
+      "from": "IN_PROGRESS",
+      "to": "DONE",
+      "at": "2026-08-17T06:39:17.131644+00:00",
+      "reason": "mimo-v2.5: OPEN"
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:17.235464+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "FIND_ETEXT_aghorasivas_ullekhini_on_ratnatraya",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:17.237162+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasivas_ullekhini_on_ratnatraya",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:17.238283+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "FIND_ETEXT_aitareyaaranyaka",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:17.239211+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aitareyaaranyaka",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:17.240291+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
+      "from": "READY",
+      "to": "IN_PROGRESS",
+      "at": "2026-08-17T06:39:17.240770+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
+      "from": "IN_PROGRESS",
+      "to": "DONE",
+      "at": "2026-08-17T06:39:26.371479+00:00",
+      "reason": "mimo-v2.5: OPEN"
+    },
+    {
+      "task_id": "FIND_ETEXT_ajitagama",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:26.442412+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_ajitagama",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:26.447263+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "TRANSLATE_akulaviratantra",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:26.448947+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:26.449611+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_akulaviratantra",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:26.450355+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
+      "from": "READY",
+      "to": "IN_PROGRESS",
+      "at": "2026-08-17T06:39:26.450623+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
+      "from": "IN_PROGRESS",
+      "to": "DONE",
+      "at": "2026-08-17T06:39:39.954220+00:00",
+      "reason": "mimo-v2.5: I understand you're asking about the textual alignment between the **Akulavīratantra** (specifically"
+    },
+    {
+      "task_id": "FIND_ETEXT_anonymous_ratnatrayapariksavyakhya",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:40.052372+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_anonymous_ratnatrayapariksavyakhya",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:40.053978+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "FIND_ETEXT_atharvasiraupanisad",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:40.055401+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_atharvasiraupanisad",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:40.056745+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "FIND_ETEXT_atharvavedapaippalada",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:40.058270+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "TRANSLATE_akulaviratantra",
+      "from": "READY",
+      "to": "IN_PROGRESS",
+      "at": "2026-08-17T06:39:40.059061+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "TRANSLATE_akulaviratantra",
+      "from": "IN_PROGRESS",
+      "to": "DONE",
+      "at": "2026-08-17T06:39:51.888295+00:00",
+      "reason": "mimo-v2.5: I would be pleased to assist with a translation from the **Akulavīratantra**, but I would need a spe"
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_atharvavedapaippalada",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:51.994316+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "FIND_ETEXT_atharvavedasaunaka",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:51.996258+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_atharvavedasaunaka",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:51.997734+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "FIND_ETEXT_bhagavadgita_sarvatobhadra",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:51.999008+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_bhagavadgita_sarvatobhadra",
+      "from": "BACKLOG",
+      "to": "READY",
+      "at": "2026-08-17T06:39:52.000501+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
+      "from": "READY",
+      "to": "IN_PROGRESS",
+      "at": "2026-08-17T06:39:52.001307+00:00",
+      "reason": ""
+    },
+    {
+      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
+      "from": "IN_PROGRESS",
+      "to": "DONE",
+      "at": "2026-08-17T06:40:14.736542+00:00",
+      "reason": "mimo-v2.5: Open"
     }
   ]
 }

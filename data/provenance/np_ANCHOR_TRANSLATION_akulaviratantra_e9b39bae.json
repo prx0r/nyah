@@ -1,0 +1,14 @@
+{
+  "id": "np_ANCHOR_TRANSLATION_akulaviratantra_e9b39bae",
+  "assertion": "ANCHOR_TRANSLATION for Akulavīratantra (A/B): I understand you're asking about the textual alignment between the **Akulavīratantra** (specifically the A and B recensions) and their corresponding source passages, likely in a scholarly edition or t",
+  "assertion_hash": "sha256:e9b39bae3e0439f55475e0d0d4fb757dc8746b2b47b86c7d2b8f53171accbb39",
+  "evidence": "mimo-v2.5 response (671 tokens)",
+  "evidence_hash": "sha256:2b28c5dbc82000a990e51bbf7e0c26fc913ba3103460f5c695b745426f107d37",
+  "provenance": {
+    "model": "mimo-v2.5",
+    "duration_s": 13.5,
+    "tokens": 671,
+    "schema": "nyah/result/1.0.0"
+  },
+  "created_at": "2026-08-17T06:39:39.953307+00:00"
+}

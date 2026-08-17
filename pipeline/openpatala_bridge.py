@@ -1,205 +1,158 @@
 #!/usr/bin/env python3
-"""pipeline/openpatala_bridge.py — converts OpenPatala data to nyah's completeness state format.
+"""pipeline/openpatala_bridge.py — reads OpenPatala's live API.
 
-Reads OpenPatala's translation-availability.json (260 works) and emits nyah's completeness state
-format so the gap analyzer and task generator can work with real data.
+Replaces the static JSON bridge with real API calls.
+OpenPatala API: http://127.0.0.1:8800
 
 Usage:
   python3 pipeline/openpatala_bridge.py --convert
   python3 pipeline/openpatala_bridge.py --stats
+  python3 pipeline/openpatala_bridge.py --gaps
 """
 from __future__ import annotations
 
 import argparse
 import json
+import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-OPENPATALA_DATA = Path("/root/openpatalaproject/data/corpus/translation-availability.json")
 OUTPUT = ROOT / "data" / "openpatala_state.json"
+API = "http://127.0.0.1:8800"
 
 
-def convert_coverage(work: dict) -> str:
-    """Map OpenPatala coverage to nyah source_state."""
-    cov = work.get("coverage", "none")
-    has_en = work.get("has_english", False)
-    translations = work.get("translations", [])
-
-    if cov == "full" and has_en:
-        return "ETEXT"  # has full English translation = source-ready
-    elif cov == "partial" and has_en:
-        return "ETEXT"
-    elif cov == "none" and has_en:
-        return "TRANSCRIPTION"  # has some text but no clean etext
-    elif cov == "none":
-        # check if factory says we need to acquire source
-        factory = work.get("factory", {})
-        action = factory.get("next_action")
-        if action == "ACQUIRE_SOURCE":
-            return "NONE"
-        elif action == "BUILD_L0_SOURCE_MODE":
-            return "CATALOG"  # catalog record exists, needs source
-        else:
-            return "NONE"
-    return "NONE"
+def _api_get(path: str) -> dict | None:
+    """GET from OpenPatala API."""
+    try:
+        proc = subprocess.run(
+            ["curl", "-s", "--max-time", "10", f"{API}{path}"],
+            capture_output=True, text=True, timeout=15,
+        )
+        return json.loads(proc.stdout)
+    except Exception:
+        return None
 
 
-def convert_translation(work: dict) -> str:
-    """Map OpenPatala translations to nyah translation_state."""
-    translations = work.get("translations", [])
-    if not translations:
-        return "NONE_KNOWN"
-
-    # check tiers
-    tiers = [t.get("tier", "") for t in translations]
-    complete = [t for t in translations if t.get("complete", False)]
-
-    if complete:
-        return "EXISTING"
-    elif translations:
-        return "PARTIAL"
-    return "NONE_KNOWN"
-
-
-def convert_alignment(work: dict) -> str:
-    """Map factory state to alignment_state."""
-    factory = work.get("factory", {})
-    t1 = factory.get("t1", "UNKNOWN")
-    if t1 in ("DONE", "COMPLETE"):
-        return "COMPLETE"
-    elif t1 in ("NOT_STARTED", "IN_PROGRESS"):
-        return "PARTIAL"
-    return "NONE"
+def fetch_works(limit: int = 300) -> list[dict]:
+    """Fetch all works from OpenPatala API."""
+    works = []
+    cursor = None
+    while len(works) < limit:
+        path = f"/works?limit=100"
+        if cursor:
+            path += f"&cursor={cursor}"
+        data = _api_get(path)
+        if not data or "works" not in data:
+            break
+        works.extend(data["works"])
+        cursor = data.get("next_cursor")
+        if not cursor:
+            break
+    return works
 
 
-def convert_rights(work: dict) -> str:
-    """Map copyright_hint to rights_state."""
-    hint = work.get("copyright_hint", "")
-    if hint == "IN_COPYRIGHT":
-        return "RESTRICTED"
-    elif hint in ("PUBLIC_DOMAIN", "CC-BY", "CC0"):
-        return "OPEN"
-    return "UNKNOWN"
+def work_to_state(work: dict) -> dict:
+    """Convert OpenPatala work to nyah completeness state."""
+    translation = work.get("translation_status", "none")
+    verified = work.get("verified", "false") == "true"
 
+    # Map translation_status to nyah states
+    if translation == "full":
+        source_state = "ETEXT"
+        trans_state = "EXISTING"
+    elif translation == "partial":
+        source_state = "ETEXT"
+        trans_state = "PARTIAL"
+    elif translation == "machine":
+        source_state = "ETEXT"
+        trans_state = "PATALA_MACHINE"
+    else:
+        source_state = "CATALOG"
+        trans_state = "NONE_KNOWN"
 
-def convert_work(name: str, work: dict) -> dict:
-    """Convert one OpenPatala work to nyah completeness state format."""
     return {
-        "id": f"PTW_{name[:12]}",
-        "preferred_title": name.replace("-", " ").title(),
-        "identity_state": "RESOLVED",  # OpenPatala already resolved these
-        "source_state": convert_coverage(work),
-        "translation_state": convert_translation(work),
-        "alignment_state": convert_alignment(work),
-        "evaluation_state": "NONE",
-        "rights_state": convert_rights(work),
-        # extra context from OpenPatala
+        "id": work.get("id", ""),
+        "preferred_title": work.get("title", ""),
+        "identity_state": "RESOLVED",
+        "source_state": source_state,
+        "translation_state": trans_state,
+        "alignment_state": "NONE",
+        "evaluation_state": "NONE" if not verified else "HUMAN",
+        "rights_state": "UNKNOWN",
         "_openpatala": {
-            "work": name,
-            "has_english": work.get("has_english", False),
-            "coverage": work.get("coverage", "none"),
-            "n_translations": len(work.get("translations", [])),
-            "factory_next_action": work.get("factory", {}).get("next_action"),
+            "translation_status": translation,
+            "verified": verified,
         },
     }
 
 
 def convert_all() -> list[dict]:
-    """Convert all OpenPatala works to nyah completeness state."""
-    if not OPENPATALA_DATA.exists():
-        print(f"OpenPatala data not found: {OPENPATALA_DATA}")
-        return []
+    """Fetch from API and convert to nyah state."""
+    works = fetch_works()
+    return [work_to_state(w) for w in works]
 
-    data = json.loads(OPENPATALA_DATA.read_text())
-    works = data.get("works", {})
 
-    states = []
-    for name, work in works.items():
-        states.append(convert_work(name, work))
-
-    return states
+def convert_and_save() -> None:
+    """Convert and save to nyah state file."""
+    states = convert_all()
+    if states:
+        OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+        OUTPUT.write_text(json.dumps(states, indent=2, ensure_ascii=False))
+        print(f"converted {len(states)} works from API → {OUTPUT}")
 
 
 def stats() -> None:
     """Print stats about the converted data."""
     states = convert_all()
     if not states:
+        print("no data from API")
         return
 
     print(f"=== OPENPATALA → NYAH BRIDGE ({len(states)} works) ===\n")
 
-    # source state distribution
     by_source = {}
+    by_trans = {}
     for s in states:
         v = s["source_state"]
         by_source[v] = by_source.get(v, 0) + 1
+        t = s["translation_state"]
+        by_trans[t] = by_trans.get(t, 0) + 1
+
     print("SOURCE STATE:")
     for k, n in sorted(by_source.items(), key=lambda x: -x[1]):
         print(f"  {k:20} {n:4}")
 
-    # translation state distribution
-    by_trans = {}
-    for s in states:
-        v = s["translation_state"]
-        by_trans[v] = by_trans.get(v, 0) + 1
     print("\nTRANSLATION STATE:")
     for k, n in sorted(by_trans.items(), key=lambda x: -x[1]):
         print(f"  {k:20} {n:4}")
 
-    # rights distribution
-    by_rights = {}
-    for s in states:
-        v = s["rights_state"]
-        by_rights[v] = by_rights.get(v, 0) + 1
-    print("\nRIGHTS STATE:")
-    for k, n in sorted(by_rights.items(), key=lambda x: -x[1]):
-        print(f"  {k:20} {n:4}")
-
-    # factory readiness
-    by_factory = {}
-    for s in states:
-        v = s["_openpatala"]["factory_next_action"] or "none"
-        by_factory[v] = by_factory.get(v, 0) + 1
-    print("\nFACTORY NEXT ACTION:")
-    for k, n in sorted(by_factory.items(), key=lambda x: -x[1]):
-        print(f"  {k:30} {n:4}")
-
-    # top gap candidates (source=NONE or CATALOG, no translation)
-    gap_candidates = [s for s in states
-                      if s["source_state"] in ("NONE", "CATALOG")
-                      and s["translation_state"] == "NONE_KNOWN"]
-    print(f"\nGAP CANDIDATES (no source, no translation): {len(gap_candidates)}")
-    for s in gap_candidates[:10]:
-        print(f"  {s['preferred_title']:30} source={s['source_state']}")
-
-    # Factory-ready (source=ETEXT, no/partial translation)
-    factory_ready = [s for s in states
-                     if s["source_state"] in ("ETEXT", "SCHOLARLY_ETEXT")
-                     and s["translation_state"] in ("NONE_KNOWN", "PARTIAL")]
-    print(f"\nFACTORY READY (source-ready, needs translation): {len(factory_ready)}")
-    for s in factory_ready[:10]:
-        print(f"  {s['preferred_title']:30} trans={s['translation_state']}")
+    needs_trans = [s for s in states if s["translation_state"] == "NONE_KNOWN"]
+    print(f"\nNEED TRANSLATION: {len(needs_trans)}")
 
 
-def convert_and_save() -> None:
-    """Convert and save to nyah's state file."""
+def gaps() -> None:
+    """Show works that need action."""
     states = convert_all()
-    if states:
-        OUTPUT.parent.mkdir(parents=True, exist_ok=True)
-        OUTPUT.write_text(json.dumps(states, indent=2, ensure_ascii=False))
-        print(f"converted {len(states)} works → {OUTPUT}")
+    no_trans = [s for s in states if s["translation_state"] == "NONE_KNOWN"]
+    print(f"Works needing translation: {len(no_trans)}")
+    for s in no_trans[:10]:
+        print(f"  {s['id']:40} {s['preferred_title'][:40]}")
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--convert", action="store_true", help="convert and save")
-    ap.add_argument("--stats", action="store_true", help="print stats")
+    ap.add_argument("--convert", action="store_true")
+    ap.add_argument("--stats", action="store_true")
+    ap.add_argument("--gaps", action="store_true")
     a = ap.parse_args()
     if a.convert:
         convert_and_save()
         return 0
     if a.stats:
         stats()
+        return 0
+    if a.gaps:
+        gaps()
         return 0
     ap.print_help()
     return 0

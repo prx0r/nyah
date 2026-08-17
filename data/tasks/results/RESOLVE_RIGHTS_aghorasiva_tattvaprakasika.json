@@ -1,0 +1,19 @@
+{
+  "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
+  "task_type": "RESOLVE_RIGHTS",
+  "work_id": "aghorasiva_tattvaprakasika",
+  "work_title": "Aghoraśiva's Tattvaprakāśikā",
+  "status": "DONE",
+  "parsed": null,
+  "raw": "OPEN",
+  "duration_s": 9.1,
+  "tokens": 346,
+  "timestamp": "2026-08-17T06:39:26.370914+00:00",
+  "_digest": {
+    "algorithm": "sha256",
+    "value": "f773a2242ca1ba853228968f79c7dd7a7e9f79146bce2d66b6a879718eaa8ca4",
+    "encoding": "hex",
+    "canonicalization": "jcs"
+  },
+  "_nanopub": "np_RESOLVE_RIGHTS_aghorasiva_tattvaprakasika_01664ecd"
+}

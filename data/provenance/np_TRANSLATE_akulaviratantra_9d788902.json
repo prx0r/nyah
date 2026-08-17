@@ -1,0 +1,14 @@
+{
+  "id": "np_TRANSLATE_akulaviratantra_9d788902",
+  "assertion": "TRANSLATE for Akulavīratantra (A/B): I would be pleased to assist with a translation from the **Akulavīratantra**, but I would need a specific passage or verse to work with.\n\nThe *Akulavīratantra* (sometimes classified among the \"Kaula\" ",
+  "assertion_hash": "sha256:9d7889024b06e54a1f54fcf8f50c116c173d4d8397d1473e8b749546f2a0839a",
+  "evidence": "mimo-v2.5 response (673 tokens)",
+  "evidence_hash": "sha256:236c355b62d4f9a5ef78a76ecdb53ab60487817762b8f03b327eeb301226d54d",
+  "provenance": {
+    "model": "mimo-v2.5",
+    "duration_s": 11.8,
+    "tokens": 673,
+    "schema": "nyah/result/1.0.0"
+  },
+  "created_at": "2026-08-17T06:39:51.887501+00:00"
+}

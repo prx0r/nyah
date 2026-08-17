@@ -1,0 +1,118 @@
+{
+  "version": "1.0.0",
+  "schemas": {
+    "nyah/event/1.0.0": {
+      "uri": "nyah/event/1.0.0",
+      "family": "event",
+      "version": "1.0.0",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "event_id": {
+            "type": "string"
+          },
+          "event_type": {
+            "type": "string"
+          },
+          "entity_ids": {
+            "type": "array"
+          },
+          "payload": {
+            "type": "object"
+          }
+        }
+      },
+      "digest": "sha256:cb85e47dcb9144c4a12a626425765f28c3973613424ca4d8d9ccf8bc2d0bf53d",
+      "published_at": "2026-08-17T06:38:02.110539+00:00",
+      "immutable": true
+    },
+    "nyah/task/1.0.0": {
+      "uri": "nyah/task/1.0.0",
+      "family": "task",
+      "version": "1.0.0",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "task_type": {
+            "type": "string"
+          },
+          "work_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "digest": "sha256:1feaf36806d85a187c6e8fcd17bb6242ae207e3b2df1e2f61af41334dcae0d4e",
+      "published_at": "2026-08-17T06:38:02.110856+00:00",
+      "immutable": true
+    },
+    "nyah/result/1.0.0": {
+      "uri": "nyah/result/1.0.0",
+      "family": "result",
+      "version": "1.0.0",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "task_id": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "raw": {
+            "type": "string"
+          },
+          "tokens": {
+            "type": "integer"
+          }
+        }
+      },
+      "digest": "sha256:7e1bae9c2ed5872bf39002c915fa5d963b0760d2e970a02c4d9226fdb7a6eb4e",
+      "published_at": "2026-08-17T06:38:02.111122+00:00",
+      "immutable": true
+    },
+    "nyah/entity/1.0.0": {
+      "uri": "nyah/entity/1.0.0",
+      "family": "entity",
+      "version": "1.0.0",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "entity_class": {
+            "type": "string"
+          },
+          "lifecycle": {
+            "type": "string"
+          }
+        }
+      },
+      "digest": "sha256:c28a2b27b29ad84ef0a1a99264558f1b8e543fa37726bf6a5351663e6e8b0b29",
+      "published_at": "2026-08-17T06:38:02.111594+00:00",
+      "immutable": true
+    },
+    "nyah/digest/1.0.0": {
+      "uri": "nyah/digest/1.0.0",
+      "family": "digest",
+      "version": "1.0.0",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "digests": {
+            "type": "array"
+          }
+        }
+      },
+      "digest": "sha256:534f3f150d046c8e0f232e6137ed5554bfa4a5686512c78c8b36fd9227d1e188",
+      "published_at": "2026-08-17T06:38:02.111870+00:00",
+      "immutable": true
+    }
+  }
+}
