@@ -113,6 +113,22 @@
       "digest": "sha256:534f3f150d046c8e0f232e6137ed5554bfa4a5686512c78c8b36fd9227d1e188",
       "published_at": "2026-08-17T06:38:02.111870+00:00",
       "immutable": true
+    },
+    "nyah/test/1.0.0": {
+      "uri": "nyah/test/1.0.0",
+      "family": "test",
+      "version": "1.0.0",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "string"
+          }
+        }
+      },
+      "digest": "sha256:7d67f2da31c37dd282fc4dbb9f98ba87093837f0a6616a69899e9f700633fea6",
+      "published_at": "2026-08-17T07:23:43.454359+00:00",
+      "immutable": true
     }
   }
 }

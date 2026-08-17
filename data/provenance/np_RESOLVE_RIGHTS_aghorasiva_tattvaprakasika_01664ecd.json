@@ -2,13 +2,13 @@
   "id": "np_RESOLVE_RIGHTS_aghorasiva_tattvaprakasika_01664ecd",
   "assertion": "RESOLVE_RIGHTS for Aghoraśiva's Tattvaprakāśikā: OPEN",
   "assertion_hash": "sha256:01664ecd526b5e442d918507b45e00df11cf2ba1fcd83c9cbb510f26e387ef6d",
-  "evidence": "mimo-v2.5 response (434 tokens)",
-  "evidence_hash": "sha256:2ededcb508c49236e63014b58a7b50dff7a6dbfdc0c882f3da07569dafe0df84",
+  "evidence": "mimo-v2.5 response (461 tokens)",
+  "evidence_hash": "sha256:85d680eed2a56ccabe372c28d6b1d880e47a76a268267c07a23c73b4c22ed887",
   "provenance": {
     "model": "mimo-v2.5",
-    "duration_s": 10.6,
-    "tokens": 434,
+    "duration_s": 13.5,
+    "tokens": 461,
     "schema": "nyah/result/1.0.0"
   },
-  "created_at": "2026-08-17T06:50:04.802327+00:00"
+  "created_at": "2026-08-17T07:27:43.775592+00:00"
 }

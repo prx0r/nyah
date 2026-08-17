@@ -1,5 +1,5 @@
 {
-  "updated": "2026-08-17T06:51:13.677453+00:00",
+  "updated": "2026-08-17T07:27:57.366438+00:00",
   "tasks": {
     "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus": {
       "task_id": "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus",
@@ -10,16 +10,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:45.811487+00:00",
-      "updated_at": "2026-08-17T06:49:45.811707+00:00",
+      "created_at": "2026-08-17T07:27:26.087030+00:00",
+      "updated_at": "2026-08-17T07:27:26.087244+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:45.811487+00:00"
+          "at": "2026-08-17T07:27:26.087030+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:45.811707+00:00",
+          "at": "2026-08-17T07:27:26.087244+00:00",
           "reason": ""
         }
       ],
@@ -34,26 +34,26 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:45.811869+00:00",
-      "updated_at": "2026-08-17T06:49:54.114406+00:00",
+      "created_at": "2026-08-17T07:27:26.087404+00:00",
+      "updated_at": "2026-08-17T07:27:30.157417+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:45.811869+00:00"
+          "at": "2026-08-17T07:27:26.087404+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:45.812526+00:00",
+          "at": "2026-08-17T07:27:26.087929+00:00",
           "reason": ""
         },
         {
           "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:49:45.815711+00:00",
+          "at": "2026-08-17T07:27:26.089756+00:00",
           "reason": ""
         },
         {
           "state": "DONE",
-          "at": "2026-08-17T06:49:54.114406+00:00",
+          "at": "2026-08-17T07:27:30.157417+00:00",
           "reason": "mimo-v2.5: OPEN"
         }
       ],
@@ -68,16 +68,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:45.812790+00:00",
-      "updated_at": "2026-08-17T06:49:45.813122+00:00",
+      "created_at": "2026-08-17T07:27:26.088219+00:00",
+      "updated_at": "2026-08-17T07:27:26.088453+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:45.812790+00:00"
+          "at": "2026-08-17T07:27:26.088219+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:45.813122+00:00",
+          "at": "2026-08-17T07:27:26.088453+00:00",
           "reason": ""
         }
       ],
@@ -92,26 +92,26 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:45.813409+00:00",
-      "updated_at": "2026-08-17T06:50:04.802673+00:00",
+      "created_at": "2026-08-17T07:27:26.088706+00:00",
+      "updated_at": "2026-08-17T07:27:43.776384+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:45.813409+00:00"
+          "at": "2026-08-17T07:27:26.088706+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:45.813642+00:00",
+          "at": "2026-08-17T07:27:26.088958+00:00",
           "reason": ""
         },
         {
           "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:49:54.210743+00:00",
+          "at": "2026-08-17T07:27:30.245787+00:00",
           "reason": ""
         },
         {
           "state": "DONE",
-          "at": "2026-08-17T06:50:04.802673+00:00",
+          "at": "2026-08-17T07:27:43.776384+00:00",
           "reason": "mimo-v2.5: OPEN"
         }
       ],
@@ -126,16 +126,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:45.813931+00:00",
-      "updated_at": "2026-08-17T06:49:45.814236+00:00",
+      "created_at": "2026-08-17T07:27:26.089245+00:00",
+      "updated_at": "2026-08-17T07:27:26.089479+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:45.813931+00:00"
+          "at": "2026-08-17T07:27:26.089245+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:45.814236+00:00",
+          "at": "2026-08-17T07:27:26.089479+00:00",
           "reason": ""
         }
       ],
@@ -146,31 +146,21 @@
       "task_type": "RESOLVE_RIGHTS",
       "work_id": "aghorasiva_tattvasamgrahalaghutika",
       "work_title": "Aghoraśiva's Tattvasaṃgrahalaghuṭīkā",
-      "state": "DONE",
+      "state": "READY",
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:54.205918+00:00",
-      "updated_at": "2026-08-17T06:51:13.677425+00:00",
+      "created_at": "2026-08-17T07:27:30.240771+00:00",
+      "updated_at": "2026-08-17T07:27:30.241111+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:54.205918+00:00"
+          "at": "2026-08-17T07:27:30.240771+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:54.206426+00:00",
+          "at": "2026-08-17T07:27:30.241111+00:00",
           "reason": ""
-        },
-        {
-          "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:51:05.125059+00:00",
-          "reason": ""
-        },
-        {
-          "state": "DONE",
-          "at": "2026-08-17T06:51:13.677425+00:00",
-          "reason": "mimo-v2.5: OPEN"
         }
       ],
       "retry_count": 0
@@ -184,16 +174,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:54.207096+00:00",
-      "updated_at": "2026-08-17T06:49:54.207758+00:00",
+      "created_at": "2026-08-17T07:27:30.242556+00:00",
+      "updated_at": "2026-08-17T07:27:30.242969+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:54.207096+00:00"
+          "at": "2026-08-17T07:27:30.242556+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:54.207758+00:00",
+          "at": "2026-08-17T07:27:30.242969+00:00",
           "reason": ""
         }
       ],
@@ -208,16 +198,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:54.208170+00:00",
-      "updated_at": "2026-08-17T06:49:54.208540+00:00",
+      "created_at": "2026-08-17T07:27:30.243513+00:00",
+      "updated_at": "2026-08-17T07:27:30.243825+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:54.208170+00:00"
+          "at": "2026-08-17T07:27:30.243513+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:54.208540+00:00",
+          "at": "2026-08-17T07:27:30.243825+00:00",
           "reason": ""
         }
       ],
@@ -232,16 +222,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:54.208927+00:00",
-      "updated_at": "2026-08-17T06:49:54.209344+00:00",
+      "created_at": "2026-08-17T07:27:30.244200+00:00",
+      "updated_at": "2026-08-17T07:27:30.244586+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:54.208927+00:00"
+          "at": "2026-08-17T07:27:30.244200+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:54.209344+00:00",
+          "at": "2026-08-17T07:27:30.244586+00:00",
           "reason": ""
         }
       ],
@@ -256,16 +246,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:49:54.209880+00:00",
-      "updated_at": "2026-08-17T06:49:54.210325+00:00",
+      "created_at": "2026-08-17T07:27:30.244894+00:00",
+      "updated_at": "2026-08-17T07:27:30.245254+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:49:54.209880+00:00"
+          "at": "2026-08-17T07:27:30.244894+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:49:54.210325+00:00",
+          "at": "2026-08-17T07:27:30.245254+00:00",
           "reason": ""
         }
       ],
@@ -280,16 +270,16 @@
       "priority": 0.1152,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:50:04.895230+00:00",
-      "updated_at": "2026-08-17T06:50:04.895794+00:00",
+      "created_at": "2026-08-17T07:27:43.869541+00:00",
+      "updated_at": "2026-08-17T07:27:43.870213+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:50:04.895230+00:00"
+          "at": "2026-08-17T07:27:43.869541+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:50:04.895794+00:00",
+          "at": "2026-08-17T07:27:43.870213+00:00",
           "reason": ""
         }
       ],
@@ -304,16 +294,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:50:04.897111+00:00",
-      "updated_at": "2026-08-17T06:50:04.897682+00:00",
+      "created_at": "2026-08-17T07:27:43.873318+00:00",
+      "updated_at": "2026-08-17T07:27:43.873907+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:50:04.897111+00:00"
+          "at": "2026-08-17T07:27:43.873318+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:50:04.897682+00:00",
+          "at": "2026-08-17T07:27:43.873907+00:00",
           "reason": ""
         }
       ],
@@ -324,78 +314,58 @@
       "task_type": "TRANSLATE",
       "work_id": "akulaviratantra",
       "work_title": "Akulavīratantra (A/B)",
-      "state": "BACKLOG",
+      "state": "READY",
       "priority": 0.2688,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:50:04.898261+00:00",
-      "updated_at": "2026-08-17T06:51:05.044354+00:00",
+      "created_at": "2026-08-17T07:27:43.874423+00:00",
+      "updated_at": "2026-08-17T07:27:43.874996+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:50:04.898261+00:00"
+          "at": "2026-08-17T07:27:43.874423+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:50:04.898758+00:00",
+          "at": "2026-08-17T07:27:43.874996+00:00",
           "reason": ""
-        },
-        {
-          "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:50:35.020680+00:00",
-          "reason": ""
-        },
-        {
-          "state": "FAILED",
-          "at": "2026-08-17T06:51:05.041734+00:00",
-          "reason": "Expecting value: line 1 column 1 (char 0)"
-        },
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:51:05.044354+00:00",
-          "reason": "retry #1"
         }
       ],
-      "retry_count": 1
+      "retry_count": 0
     },
     "ANCHOR_TRANSLATION_akulaviratantra": {
       "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
       "task_type": "ANCHOR_TRANSLATION",
       "work_id": "akulaviratantra",
       "work_title": "Akulavīratantra (A/B)",
-      "state": "BACKLOG",
+      "state": "DONE",
       "priority": 0.336,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:50:04.899412+00:00",
-      "updated_at": "2026-08-17T06:50:34.918534+00:00",
+      "created_at": "2026-08-17T07:27:43.878943+00:00",
+      "updated_at": "2026-08-17T07:27:57.366396+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:50:04.899412+00:00"
+          "at": "2026-08-17T07:27:43.878943+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:50:04.899776+00:00",
+          "at": "2026-08-17T07:27:43.879575+00:00",
           "reason": ""
         },
         {
           "state": "IN_PROGRESS",
-          "at": "2026-08-17T06:50:04.901262+00:00",
+          "at": "2026-08-17T07:27:43.884242+00:00",
           "reason": ""
         },
         {
-          "state": "FAILED",
-          "at": "2026-08-17T06:50:34.917118+00:00",
-          "reason": "Expecting value: line 1 column 1 (char 0)"
-        },
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:50:34.918534+00:00",
-          "reason": "retry #1"
+          "state": "DONE",
+          "at": "2026-08-17T07:27:57.366396+00:00",
+          "reason": "mimo-v2.5: The Akulavīratantra is a Buddhist Tantric text, notably belonging to the *Kriyā* and *Caryā* tantra "
         }
       ],
-      "retry_count": 1
+      "retry_count": 0
     },
     "RESOLVE_RIGHTS_akulaviratantra": {
       "task_id": "RESOLVE_RIGHTS_akulaviratantra",
@@ -406,256 +376,16 @@
       "priority": 0.135,
       "assigned_agent": null,
       "metadata": {},
-      "created_at": "2026-08-17T06:50:04.900200+00:00",
-      "updated_at": "2026-08-17T06:50:04.900532+00:00",
+      "created_at": "2026-08-17T07:27:43.882632+00:00",
+      "updated_at": "2026-08-17T07:27:43.883297+00:00",
       "state_history": [
         {
           "state": "BACKLOG",
-          "at": "2026-08-17T06:50:04.900200+00:00"
+          "at": "2026-08-17T07:27:43.882632+00:00"
         },
         {
           "state": "READY",
-          "at": "2026-08-17T06:50:04.900532+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "FIND_ETEXT_anonymous_ratnatrayapariksavyakhya": {
-      "task_id": "FIND_ETEXT_anonymous_ratnatrayapariksavyakhya",
-      "task_type": "FIND_ETEXT",
-      "work_id": "anonymous_ratnatrayapariksavyakhya",
-      "work_title": "Anonymous Ratnatrayaparīkṣā-vyākhyā (variant)",
-      "state": "READY",
-      "priority": 0.1152,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:50:35.012649+00:00",
-      "updated_at": "2026-08-17T06:50:35.013385+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:50:35.012649+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:50:35.013385+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "RESOLVE_RIGHTS_anonymous_ratnatrayapariksavyakhya": {
-      "task_id": "RESOLVE_RIGHTS_anonymous_ratnatrayapariksavyakhya",
-      "task_type": "RESOLVE_RIGHTS",
-      "work_id": "anonymous_ratnatrayapariksavyakhya",
-      "work_title": "Anonymous Ratnatrayaparīkṣā-vyākhyā (variant)",
-      "state": "READY",
-      "priority": 0.135,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:50:35.014531+00:00",
-      "updated_at": "2026-08-17T06:50:35.015408+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:50:35.014531+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:50:35.015408+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "FIND_ETEXT_atharvasiraupanisad": {
-      "task_id": "FIND_ETEXT_atharvasiraupanisad",
-      "task_type": "FIND_ETEXT",
-      "work_id": "atharvasiraupanisad",
-      "work_title": "Atharvaśiras / Atharvaśira Upaniṣad",
-      "state": "READY",
-      "priority": 0.1152,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:50:35.016151+00:00",
-      "updated_at": "2026-08-17T06:50:35.016735+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:50:35.016151+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:50:35.016735+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "RESOLVE_RIGHTS_atharvasiraupanisad": {
-      "task_id": "RESOLVE_RIGHTS_atharvasiraupanisad",
-      "task_type": "RESOLVE_RIGHTS",
-      "work_id": "atharvasiraupanisad",
-      "work_title": "Atharvaśiras / Atharvaśira Upaniṣad",
-      "state": "READY",
-      "priority": 0.135,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:50:35.017433+00:00",
-      "updated_at": "2026-08-17T06:50:35.018266+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:50:35.017433+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:50:35.018266+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "FIND_ETEXT_atharvavedapaippalada": {
-      "task_id": "FIND_ETEXT_atharvavedapaippalada",
-      "task_type": "FIND_ETEXT",
-      "work_id": "atharvavedapaippalada",
-      "work_title": "Atharvaveda (Paippalāda recension)",
-      "state": "READY",
-      "priority": 0.1152,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:50:35.019083+00:00",
-      "updated_at": "2026-08-17T06:50:35.019884+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:50:35.019083+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:50:35.019884+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "RESOLVE_RIGHTS_atharvavedapaippalada": {
-      "task_id": "RESOLVE_RIGHTS_atharvavedapaippalada",
-      "task_type": "RESOLVE_RIGHTS",
-      "work_id": "atharvavedapaippalada",
-      "work_title": "Atharvaveda (Paippalāda recension)",
-      "state": "READY",
-      "priority": 0.135,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:51:05.119920+00:00",
-      "updated_at": "2026-08-17T06:51:05.120404+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:51:05.119920+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:51:05.120404+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "FIND_ETEXT_atharvavedasaunaka": {
-      "task_id": "FIND_ETEXT_atharvavedasaunaka",
-      "task_type": "FIND_ETEXT",
-      "work_id": "atharvavedasaunaka",
-      "work_title": "Atharvaveda (Śaunaka recension)",
-      "state": "READY",
-      "priority": 0.1152,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:51:05.121058+00:00",
-      "updated_at": "2026-08-17T06:51:05.121435+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:51:05.121058+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:51:05.121435+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "RESOLVE_RIGHTS_atharvavedasaunaka": {
-      "task_id": "RESOLVE_RIGHTS_atharvavedasaunaka",
-      "task_type": "RESOLVE_RIGHTS",
-      "work_id": "atharvavedasaunaka",
-      "work_title": "Atharvaveda (Śaunaka recension)",
-      "state": "READY",
-      "priority": 0.135,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:51:05.122313+00:00",
-      "updated_at": "2026-08-17T06:51:05.122717+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:51:05.122313+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:51:05.122717+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "FIND_ETEXT_bhagavadgita_sarvatobhadra": {
-      "task_id": "FIND_ETEXT_bhagavadgita_sarvatobhadra",
-      "task_type": "FIND_ETEXT",
-      "work_id": "bhagavadgita_sarvatobhadra",
-      "work_title": "Bhagavadgītā-Sarvatobhadra — Rāmakaṇṭha",
-      "state": "READY",
-      "priority": 0.1152,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:51:05.123095+00:00",
-      "updated_at": "2026-08-17T06:51:05.123675+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:51:05.123095+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:51:05.123675+00:00",
-          "reason": ""
-        }
-      ],
-      "retry_count": 0
-    },
-    "RESOLVE_RIGHTS_bhagavadgita_sarvatobhadra": {
-      "task_id": "RESOLVE_RIGHTS_bhagavadgita_sarvatobhadra",
-      "task_type": "RESOLVE_RIGHTS",
-      "work_id": "bhagavadgita_sarvatobhadra",
-      "work_title": "Bhagavadgītā-Sarvatobhadra — Rāmakaṇṭha",
-      "state": "READY",
-      "priority": 0.135,
-      "assigned_agent": null,
-      "metadata": {},
-      "created_at": "2026-08-17T06:51:05.124052+00:00",
-      "updated_at": "2026-08-17T06:51:05.124649+00:00",
-      "state_history": [
-        {
-          "state": "BACKLOG",
-          "at": "2026-08-17T06:51:05.124052+00:00"
-        },
-        {
-          "state": "READY",
-          "at": "2026-08-17T06:51:05.124649+00:00",
+          "at": "2026-08-17T07:27:43.883297+00:00",
           "reason": ""
         }
       ],
@@ -667,260 +397,148 @@
       "task_id": "FIND_ETEXT_aghorasiva_ashtaprakarana_corpus",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:45.811707+00:00",
+      "at": "2026-08-17T07:27:26.087244+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:45.812526+00:00",
+      "at": "2026-08-17T07:27:26.087929+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_aghorasiva_tattvaprakasika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:45.813122+00:00",
+      "at": "2026-08-17T07:27:26.088453+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:45.813642+00:00",
+      "at": "2026-08-17T07:27:26.088958+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_aghorasiva_tattvasamgrahalaghutika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:45.814236+00:00",
+      "at": "2026-08-17T07:27:26.089479+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
       "from": "READY",
       "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:49:45.815711+00:00",
+      "at": "2026-08-17T07:27:26.089756+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_ashtaprakarana_corpus",
       "from": "IN_PROGRESS",
       "to": "DONE",
-      "at": "2026-08-17T06:49:54.114406+00:00",
+      "at": "2026-08-17T07:27:30.157417+00:00",
       "reason": "mimo-v2.5: OPEN"
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:54.206426+00:00",
+      "at": "2026-08-17T07:27:30.241111+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_aghorasivas_ullekhini_on_ratnatraya",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:54.207758+00:00",
+      "at": "2026-08-17T07:27:30.242969+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasivas_ullekhini_on_ratnatraya",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:54.208540+00:00",
+      "at": "2026-08-17T07:27:30.243825+00:00",
       "reason": ""
     },
     {
       "task_id": "FIND_ETEXT_aitareyaaranyaka",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:54.209344+00:00",
+      "at": "2026-08-17T07:27:30.244586+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aitareyaaranyaka",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:49:54.210325+00:00",
+      "at": "2026-08-17T07:27:30.245254+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
       "from": "READY",
       "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:49:54.210743+00:00",
+      "at": "2026-08-17T07:27:30.245787+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvaprakasika",
       "from": "IN_PROGRESS",
       "to": "DONE",
-      "at": "2026-08-17T06:50:04.802673+00:00",
+      "at": "2026-08-17T07:27:43.776384+00:00",
       "reason": "mimo-v2.5: OPEN"
     },
     {
       "task_id": "FIND_ETEXT_ajitagama",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:50:04.895794+00:00",
+      "at": "2026-08-17T07:27:43.870213+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_ajitagama",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:50:04.897682+00:00",
+      "at": "2026-08-17T07:27:43.873907+00:00",
       "reason": ""
     },
     {
       "task_id": "TRANSLATE_akulaviratantra",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:50:04.898758+00:00",
+      "at": "2026-08-17T07:27:43.874996+00:00",
       "reason": ""
     },
     {
       "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:50:04.899776+00:00",
+      "at": "2026-08-17T07:27:43.879575+00:00",
       "reason": ""
     },
     {
       "task_id": "RESOLVE_RIGHTS_akulaviratantra",
       "from": "BACKLOG",
       "to": "READY",
-      "at": "2026-08-17T06:50:04.900532+00:00",
+      "at": "2026-08-17T07:27:43.883297+00:00",
       "reason": ""
     },
     {
       "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
       "from": "READY",
       "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:50:04.901262+00:00",
+      "at": "2026-08-17T07:27:43.884242+00:00",
       "reason": ""
     },
     {
       "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
-      "from": "IN_PROGRESS",
-      "to": "FAILED",
-      "at": "2026-08-17T06:50:34.917118+00:00",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "task_id": "ANCHOR_TRANSLATION_akulaviratantra",
-      "from": "FAILED",
-      "to": "BACKLOG",
-      "at": "2026-08-17T06:50:34.918534+00:00",
-      "reason": "retry #1"
-    },
-    {
-      "task_id": "FIND_ETEXT_anonymous_ratnatrayapariksavyakhya",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:50:35.013385+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "RESOLVE_RIGHTS_anonymous_ratnatrayapariksavyakhya",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:50:35.015408+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "FIND_ETEXT_atharvasiraupanisad",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:50:35.016735+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "RESOLVE_RIGHTS_atharvasiraupanisad",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:50:35.018266+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "FIND_ETEXT_atharvavedapaippalada",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:50:35.019884+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "TRANSLATE_akulaviratantra",
-      "from": "READY",
-      "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:50:35.020680+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "TRANSLATE_akulaviratantra",
-      "from": "IN_PROGRESS",
-      "to": "FAILED",
-      "at": "2026-08-17T06:51:05.041734+00:00",
-      "reason": "Expecting value: line 1 column 1 (char 0)"
-    },
-    {
-      "task_id": "TRANSLATE_akulaviratantra",
-      "from": "FAILED",
-      "to": "BACKLOG",
-      "at": "2026-08-17T06:51:05.044354+00:00",
-      "reason": "retry #1"
-    },
-    {
-      "task_id": "RESOLVE_RIGHTS_atharvavedapaippalada",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:51:05.120404+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "FIND_ETEXT_atharvavedasaunaka",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:51:05.121435+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "RESOLVE_RIGHTS_atharvavedasaunaka",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:51:05.122717+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "FIND_ETEXT_bhagavadgita_sarvatobhadra",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:51:05.123675+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "RESOLVE_RIGHTS_bhagavadgita_sarvatobhadra",
-      "from": "BACKLOG",
-      "to": "READY",
-      "at": "2026-08-17T06:51:05.124649+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
-      "from": "READY",
-      "to": "IN_PROGRESS",
-      "at": "2026-08-17T06:51:05.125059+00:00",
-      "reason": ""
-    },
-    {
-      "task_id": "RESOLVE_RIGHTS_aghorasiva_tattvasamgrahalaghutika",
       "from": "IN_PROGRESS",
       "to": "DONE",
-      "at": "2026-08-17T06:51:13.677425+00:00",
-      "reason": "mimo-v2.5: OPEN"
+      "at": "2026-08-17T07:27:57.366396+00:00",
+      "reason": "mimo-v2.5: The Akulavīratantra is a Buddhist Tantric text, notably belonging to the *Kriyā* and *Caryā* tantra "
     }
   ]
 }

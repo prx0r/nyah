@@ -1,0 +1,19 @@
+{
+  "updated": "2026-08-17T07:24:03.050336+00:00",
+  "agents": [
+    {
+      "agent_id": "agent_test_worker_001",
+      "agent_type": "test_worker",
+      "pid": null,
+      "state": "IDLE",
+      "current_task_id": null,
+      "current_task_type": null,
+      "spawned_at": "2026-08-17T07:24:03.050065+00:00",
+      "last_heartbeat": "2026-08-17T07:24:03.050065+00:00",
+      "tasks_completed": 1,
+      "tasks_failed": 0,
+      "total_runtime_s": 0.0,
+      "error": null
+    }
+  ]
+}

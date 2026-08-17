@@ -50,13 +50,15 @@ def create_checkpoint() -> dict:
         if line.strip():
             events.append(json.loads(line))
 
-    # Find last checkpoint cursor
+    # Find last checkpoint cursor + ID
     last_cursor = 0
+    last_id = None
     if LEDGER_FILE.exists():
         for line in LEDGER_FILE.read_text().splitlines():
             if line.strip():
                 cp = json.loads(line)
                 last_cursor = max(last_cursor, cp.get("event_cursor_end", 0))
+                last_id = cp.get("checkpoint_id")
 
     new_events = events[last_cursor:]
     if not new_events:
@@ -65,7 +67,7 @@ def create_checkpoint() -> dict:
     root = _merkle_root(new_events)
     checkpoint = {
         "checkpoint_id": f"cp_{_hash(root.encode())[:16]}",
-        "previous_checkpoint": None,
+        "previous_checkpoint": last_id,
         "event_cursor_start": last_cursor,
         "event_cursor_end": last_cursor + len(new_events),
         "event_count": len(new_events),

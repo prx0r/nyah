@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""pipeline/entity_id.py — opaque entity IDs (UUIDv7-style).
+"""pipeline/entity_id.py — opaque entity IDs.
 
 From newbuild1.md §2:
 - Use opaque entity IDs, never encode content in the ID
@@ -8,25 +8,22 @@ From newbuild1.md §2:
 
 Usage:
   python3 pipeline/entity_id.py --generate WORK
-  python3 pipeline/entity_id.py --generate TASK
 """
 from __future__ import annotations
 
 import argparse
-import json
+import hashlib
 import time
 import uuid
 
 
 def generate_id(prefix: str = "PT") -> str:
-    """Generate a time-ordered ID with prefix.
-    Uses UUIDv7 pattern: timestamp + random, giving time-ordered IDs."""
+    """Generate a time-ordered ID with prefix."""
     ts_ms = int(time.time() * 1000)
-    # UUIDv7: 48 bits timestamp + 12 bits random + 62 bits random
-    u = uuid.uuid4()
-    # Override first 6 bytes with timestamp for time-ordering
-    u bytes = ts_ms.to_bytes(6, "big") + u.bytes[6:]
-    return f"{prefix}_{u.hex}"
+    # Use timestamp hex + random for time-ordering
+    ts_hex = format(ts_ms, '012x')
+    rand_hex = uuid.uuid4().hex[:20]
+    return f"{prefix}_{ts_hex}{rand_hex}"
 
 
 def main() -> int:
