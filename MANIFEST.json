@@ -183,6 +183,72 @@
       "path": "pipeline/openpatala_executor.py",
       "role": "openpatala-steps",
       "owner": "nyah"
+    },
+    {
+      "id": "rights_policy",
+      "path": "pipeline/rights_policy.py",
+      "role": "rights-policy",
+      "owner": "nyah"
+    },
+    {
+      "id": "work_completeness",
+      "path": "pipeline/work_completeness.py",
+      "role": "work-completeness",
+      "owner": "nyah"
+    },
+    {
+      "id": "resolver",
+      "path": "pipeline/resolver.py",
+      "role": "identity-resolver",
+      "owner": "nyah"
+    },
+    {
+      "id": "source_lineage",
+      "path": "pipeline/source_lineage.py",
+      "role": "source-lineage",
+      "owner": "nyah"
+    },
+    {
+      "id": "discovery_scoring",
+      "path": "pipeline/discovery_scoring.py",
+      "role": "discovery-scoring",
+      "owner": "nyah"
+    },
+    {
+      "id": "crawl_policy",
+      "path": "pipeline/crawl_policy.py",
+      "role": "crawl-policy",
+      "owner": "nyah"
+    },
+    {
+      "id": "change_feed",
+      "path": "pipeline/change_feed.py",
+      "role": "change-feed",
+      "owner": "nyah"
+    },
+    {
+      "id": "relation_vocab",
+      "path": "pipeline/relation_vocab.py",
+      "role": "relation-vocabulary",
+      "owner": "nyah"
+    },
+    {
+      "id": "schema_migrations",
+      "path": "pipeline/schema_migrations.py",
+      "role": "schema-migrations",
+      "owner": "nyah"
+    },
+    {
+      "id": "ledger",
+      "path": "pipeline/ledger.py",
+      "role": "merkle-ledger",
+      "owner": "nyah"
+    },
+    {
+      "id": "mcp_server",
+      "path": "pipeline/mcp_server.py",
+      "role": "mcp-tools",
+      "owner": "nyah"
     }
   ]
 }
