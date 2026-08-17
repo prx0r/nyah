@@ -1,0 +1,61 @@
+{"name": "patala-1-vision", "effect": "Pāṭala 1: Verified Translation Network — products wired, API exposed, agents can call them", "gate": "python3 check.py --status", "after": [], "value": 1.0, "cost": 0.1}
+
+{"name": "wire-translation-proof", "effect": "translation_proof engine callable via API (upload Sanskrit + get audit vector)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('translation_proof')\"", "after": ["patala-1-vision"], "value": 0.9, "cost": 0.3}
+
+{"name": "wire-translation-studio", "effect": "translation_studio engine callable via API (full translation pipeline)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('translation_studio')\"", "after": ["wire-translation-proof"], "value": 0.85, "cost": 0.4}
+
+{"name": "wire-benchmark", "effect": "benchmark engine callable via API (run eval on gold data)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('benchmark')\"", "after": ["wire-translation-proof"], "value": 0.8, "cost": 0.3}
+
+{"name": "wire-claim", "effect": "claim engine callable via API (passage → proposition → epistemic envelope)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('claim')\"", "after": ["patala-1-vision"], "value": 0.85, "cost": 0.3}
+
+{"name": "wire-argument", "effect": "argument engine callable via API (passage → thesis/premises/inference/defeaters)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('argument')\"", "after": ["wire-claim"], "value": 0.8, "cost": 0.3}
+
+{"name": "wire-crux", "effect": "crux engine callable via API (minimal divergence between positions)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('crux')\"", "after": ["wire-argument"], "value": 0.75, "cost": 0.2}
+
+{"name": "wire-comparison", "effect": "comparison engine callable via API (AGREEMENT / REAL CRUX)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('comparison')\"", "after": ["wire-argument"], "value": 0.7, "cost": 0.2}
+
+{"name": "wire-research-packet", "effect": "research_packet engine callable via API (question → evidence packet)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('research_packet')\"", "after": ["wire-claim"], "value": 0.75, "cost": 0.3}
+
+{"name": "wire-evidence-independence", "effect": "evidence_independence engine callable (SOURCE_ECHO + dedup)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('evidence_independence')\"", "after": ["wire-claim"], "value": 0.7, "cost": 0.2}
+
+{"name": "wire-scholar-review", "effect": "scholar_review engine callable (panel + reducer + gate + attestation)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('scholar_review')\"", "after": ["wire-argument"], "value": 0.8, "cost": 0.4}
+
+{"name": "wire-context-bundle", "effect": "context_bundle engine callable (question → token-budgeted context)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('context_bundle')\"", "after": ["wire-argument", "wire-research-packet"], "value": 0.75, "cost": 0.3}
+
+{"name": "wire-passage", "effect": "passage engine callable (canonical Passage + KG2Code query)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('passage')\"", "after": ["patala-1-vision"], "value": 0.7, "cost": 0.3}
+
+{"name": "wire-terminology", "effect": "terminology engine callable (lemma-through-time sense trajectory)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('terminology')\"", "after": ["wire-passage"], "value": 0.65, "cost": 0.3}
+
+{"name": "wire-timeline", "effect": "timeline engine callable (diachronic source-tree)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('timeline')\"", "after": ["wire-passage"], "value": 0.6, "cost": 0.3}
+
+{"name": "wire-tension-finder", "effect": "tension_finder engine callable (/find-interesting-tension)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('tension_finder')\"", "after": ["wire-argument"], "value": 0.7, "cost": 0.2}
+
+{"name": "wire-scholar-profile", "effect": "scholar_profile engine callable (contribution ledger)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('scholar_profile')\"", "after": ["wire-scholar-review"], "value": 0.65, "cost": 0.2}
+
+{"name": "wire-scholar-identity", "effect": "scholar_identity engine callable (ORCID + Ed25519 key)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('scholar_identity')\"", "after": ["wire-scholar-review"], "value": 0.6, "cost": 0.2}
+
+{"name": "wire-review-queue", "effect": "review_queue engine callable (prioritized review list)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('review_queue')\"", "after": ["wire-scholar-review"], "value": 0.6, "cost": 0.2}
+
+{"name": "wire-review-workbench", "effect": "review_workbench engine callable (full review context + decision)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('review_workbench')\"", "after": ["wire-scholar-review"], "value": 0.65, "cost": 0.2}
+
+{"name": "wire-manuscript-routing", "effect": "manuscript_routing engine callable (label + route manuscript)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('manuscript_routing')\"", "after": ["patala-1-vision"], "value": 0.7, "cost": 0.3}
+
+{"name": "wire-manuscript-ingest", "effect": "manuscript_ingest engine callable (manuscript+OCR → quality-scored SOURCE)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('manuscript_ingest')\"", "after": ["wire-manuscript-routing"], "value": 0.7, "cost": 0.4}
+
+{"name": "wire-collation", "effect": "collation engine callable (N witnesses → variant apparatus)", "gate": "python3 -c \"from pipeline.product_wire import wire_product; assert wire_product('collation')\"", "after": ["wire-manuscript-ingest"], "value": 0.65, "cost": 0.3}
+
+{"name": "build-product-wire", "effect": "product_wire.py framework — generic adapter to expose any product as API endpoint", "gate": "test -f pipeline/product_wire.py", "after": ["patala-1-vision"], "value": 0.95, "cost": 0.4}
+
+{"name": "build-api-endpoints", "effect": "FastAPI endpoints for all wired products (POST /translate, POST /audit, etc.)", "gate": "python3 -c \"import server; assert hasattr(server, 'app')\"", "after": ["build-product-wire"], "value": 0.9, "cost": 0.5}
+
+{"name": "build-openpatala-state-bridge", "effect": "nyah reads OpenPatala works + wires product context (which work, which passage)", "gate": "python3 -c \"from pipeline.openpatala_bridge import get_work_bundle; assert get_work_bundle('tantraloka')\"", "after": ["build-api-endpoints"], "value": 0.85, "cost": 0.4}
+
+{"name": "test-translation-proof-endpoint", "effect": "POST /audit with real Sanskrit returns audit vector", "gate": "curl -s -X POST http://localhost:8800/audit -d '{\"source\":\"namah shivaya\",\"candidate\":\"Homage to Shiva\"}' | python3 -c \"import sys,json; d=json.load(sys.stdin); assert 'checks' in d\"", "after": ["build-api-endpoints"], "value": 0.9, "cost": 0.3}
+
+{"name": "test-benchmark-endpoint", "effect": "POST /bench with gold subset returns chrF/bleu/semantic scores", "gate": "curl -s -X POST http://localhost:8800/bench -d '{\"n\":3}' | python3 -c \"import sys,json; d=json.load(sys.stdin); assert 'results' in d\"", "after": ["build-api-endpoints"], "value": 0.85, "cost": 0.3}
+
+{"name": "test-scholar-review-endpoint", "effect": "POST /review with claim returns review panel", "gate": "curl -s -X POST http://localhost:8800/review -d '{\"claim\":\"test\"}' | python3 -c \"import sys,json; d=json.load(sys.stdin); assert 'panel' in d\"", "after": ["build-api-endpoints"], "value": 0.8, "cost": 0.3}
+
+{"name": "test-context-bundle-endpoint", "effect": "POST /context with question returns token-budgeted bundle", "gate": "curl -s -X POST http://localhost:8800/context -d '{\"question\":\"test\"}' | python3 -c \"import sys,json; d=json.load(sys.stdin); assert 'bundle' in d\"", "after": ["build-api-endpoints"], "value": 0.8, "cost": 0.3}
+
+{"name": "test-full-pipeline", "effect": "name→work→passage→translation→proof→review all connected", "gate": "python3 pipeline/test_full_pipeline.py", "after": ["test-translation-proof-endpoint", "test-benchmark-endpoint"], "value": 0.95, "cost": 0.5}
